@@ -1,0 +1,17 @@
+Education:
+1. Bachelor of Computer Applications (BCA):
+- College: Nathdwara Institute of Biotechnology and Management (NIBM), Nathdwara, Rajasthan
+- University: Mohanlal Sukhadiya University (MLSU), Udaipur, Rajasthan
+- Duration: 2022 - 2025
+- CGPA: 8.64
+- Coursework: Mathematics, Physics, Computer Organization, Information Technology and PC Packages, Data Structures, Operating System, Networking, Information Systems, Cloud Computing, C, C++, Java, Web Development, Database Management Systems, Mobile and Wireless Technology.
+2. Senior Secondary (Class XII):
+- School: Shree Jee Public Sr. Sec. School, Nathdwara, Rajasthan
+- Board: State Board, Rajasthan Board of Secondary Eduction (RBSE)
+- Year of completion: 2022
+- Percentage: 87.00%3
+3. Secondary (Class X):
+- School: Sunrise Academy, Nathdwara, Rajasthan
+- Board: State Board, Rajasthan Board of Secondary Eduction (RBSE)
+- Year of completion: 2020
+- Percentage: 90.83%

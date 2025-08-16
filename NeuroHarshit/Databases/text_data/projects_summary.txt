@@ -1,0 +1,36 @@
+## Project: Handwritten Digit Recognition
+Duration: Nov 2024 - Dec 2024
+Description: A GUI based software, recognizes Handwritten digits. Built and trained the CNN model from scratch on the MNIST dataset, without relying on pre-trained weights. User can draw digits, add noise, change pensize and import/export the prediction history. Program displays metrics like Probability Distribution, Accuracy, Confidence, Confusion Matrix, and Correct V/S Wrong Predictions. Intuitive buttons, shortcuts, and toggles for seamless user experience.
+Technologies Used: Python, TensorFlow, NumPy, Pandas, Pillow, CustomTkinter, scikit-learn, PyInstaller, Matplotlib, Tkinter, Pickle, and inno setup builder.
+Keywords: Custom Model, Computer Vision, Deep Learning, GUI, Model Deployment
+
+---
+
+## Project: NueroHarshit
+Duration: Aug 2025 – Present (Work in Progress)
+Description: An AI-powered personal portfolio assistant built using RAG (Retrieval-Augmented Generation). The system is designed to answer queries about my background, projects, skills, certifications, education, experience, and achievements. It integrates a custom GUI, vector database, LLM, and modular text-based dataset for easy updates.
+Technologies (Planned/Using): Python, OpenAI API, LangChain, FAISS, SQLite, CustomTkinter.
+Keywords: RAG, AI Agent, Portfolio, GUI
+
+---
+
+## Project: Human Emotion Detection:
+Duration: Mar 2025 – Mar 2025
+Description: A computer vision project that detects human facial emotions (Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise) using Convolutional Neural Networks (CNNs). Explored multiple architectures including LeNet-5, AlexNet, VGG-16, and ResNet-34. Achieved ~64% accuracy on the FER2013 dataset with VGG-16 after applying data augmentation and fine-tuning. This project was my first step into deep learning for computer vision and gave me strong practical insights into model architecture design, overfitting, and transfer learning.
+Future Work: Plan to revisit this project with improved architectures (EfficientNet, MobileNetV2, Xception), improved dataset and better fine-tuning strategies after gaining more experience.  
+Technologies Used: Python, TensorFlow, OpenCV, NumPy, Matplotlib.
+Keywords: Custom Model, Deep Learning, Real-time Computer Vision Pipeline
+
+---
+
+## Learning & Practice Repository: Hands-on-ML
+Description: Personal repository documenting my chapter-wise implementations, exercises, and notes from the book “Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow” by Aurélien Géron. The repository includes mini-projects, key concepts, and tutorials on machine learning, deep learning, and model deployment.
+Purpose: Reinforce ML fundamentals and build intuition through practical coding exercises.
+Keywords: Machine Learning, Deep Learning, Scikit-Learn, TensorFlow, Neural Networks, Model Training, ML Exercises
+
+---
+
+## Learning & Practice Repository: Python-for-Data-Analysis
+Description: Repository of chapter-wise practice, tutorials, and exercises based on “Python for Data Analysis” by Wes McKinney. Covers data wrangling, preprocessing, and analysis techniques with Pandas, NumPy, and Jupyter, along with tips and tricks for efficient data handling.
+Purpose: Strengthen data analysis skills through hands-on coding and structured learning.
+Keywords: Data Analysis, Pandas, NumPy, Jupyter, Data Wrangling, Data Cleaning, Exploratory Data Analysis, Data Visualization

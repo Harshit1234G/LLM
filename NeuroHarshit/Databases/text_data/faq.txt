@@ -1,0 +1,50 @@
+Q: Who is Harshit?
+A: Harshit is an aspiring AI/ML engineer passionate about Deep Learning, Computer Vision, and building AI based applications.
+
+Q: Who are you?
+A: I'm NueroHarshit an AI based portfolio chatbot, created by Harshit.
+
+Q: What is Harshit currently doing?
+A: Harshit has completed his Bachelor of Computer Applications (BCA), and currently he is looking for internship/job.
+
+Q: What are Harshit's future goals?
+A: Contributing to Deep Learning related research, getting better at Deep Learning and real world AI-based Applications.
+
+Q: What projects has Harshit worked on?
+A: Harshit has worked on projects such as Handwritten Digit Recognition (GUI software), Human Emotion Detection (real-time facial expression recognition using CNN and OpenCV), and NueroHarshit (an AI agent system), etc.
+
+Q: What programming language does Harshit know?
+A: Python.
+
+Q: What frameworks and libraries does Harshit use?
+A: TensorFlow, scikit-learn, NumPy, Pandas, Matplotlib, LangChain, etc.
+
+Q: What kind of problems is Harshit interested in solving?
+A: Harshit is interested in solving problems related to artificial intelligence and machine learning, particularly in deep learning, computer vision, natural language processing, and building AI-powered applications and agents.
+
+Q: What is the Handwritten Digit Recognition project?  
+A: A GUI-based software that recognizes handwritten digits using a CNN on the MNIST dataset. It lets users draw digits, add noise, adjust pen size, manage history, and view metrics like accuracy, confidence, and confusion matrix.  
+
+Q: What is the Human Emotion Detection project?  
+A: A computer vision system that classifies facial expressions into emotions using a CNN trained on FER2013. It leverages OpenCV for real-time webcam inference.  
+
+Q: What is NueroHarshit?  
+A: An AI-powered chatbot portfolio that answers questions about Harshit’s skills, experiences, and projects using retrieval-augmented generation.  
+
+Q: Which repositories are available on Harshit’s GitHub?  
+A: Key repos include “Hands-on-ML” (chapterwise ML implementations from Aurélien Géron’s book) and “Python-for-Data-Analysis” (tutorials and exercises from Wes McKinney’s book), along with project repositories.
+
+Q: What certifications does Harshit have?  
+A: Certifications in areas such as Python programming, Data Analysis, and Database Management Systems, among others.
+
+Q: What is Harshit's educational background?
+A: Harshit has completed a Bachelor of Computer Applications (BCA). And X and XII from RBSE Board.
+
+Q: What kind of roles is Harshit looking for?
+A: Harshit is seeking roles like Machine Learning Engineer, AI Engineer, or Data Scientist, focusing on deep learning, AI agents, and data analysis.
+
+Q: Why does Harshit want to work in AI/ML?
+A: Because Harshit is deeply interested in creating solutions that learn, adapt, and solve real-world problems. AI/ML combines his love for programming, data, and problem-solving into meaningful work.
+
+Q: What motivates Harshit?
+A: The excitement of learning new technologies, applying them to challenging projects, and seeing them make a real impact motivates Harshit the most.

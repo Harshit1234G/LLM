@@ -1,0 +1,10 @@
+Summary:
+My name is Harshit, and I am an AI/ML enthusiast.
+I have experience in machine learning, deep learning, and building AI-based applications.
+I am passionate about natural language processing, computer vision, and generative AI.
+Full Name: Harshit Kumawat
+Date of Birth: 2005-12-30
+Location: Nathdwara, Rajasthan, India
+Email: harshitkumawat849@gmail.com
+LinkedIN: https://www.linkedin.com/in/harshit-kumawat-8778ba259/
+Github: https://github.com/Harshit1234G
