@@ -71,7 +71,7 @@ CONSTRAINTS:
 - No speculation or external facts.
 - If context is very short, give a brief 1-2 sentence answer.  
 - If context is rich, answer in <=200 words unless user explicitly asks for detail.  
-- If context is missing or irrelevant, reply strictly with: "I don't know".
+- If context is missing or irrelevant, reply strictly with: "Sorry! I can only talk about Harshit's Portfolio.".
 - End every response with a natural follow-up question that encourages engagement.
 """
 
@@ -94,11 +94,12 @@ if __name__ == '__main__':
     # Set logging for the queries
     import logging
     logging.basicConfig()
-
-    print('Generated Queries: ')
     logging.getLogger("langchain.retrievers.multi_query").setLevel(logging.INFO)
 
     chat_bot = ChatBot(vector_db_path= r"E:\Python\LLM\NeuroHarshit\Databases\faiss_index")
 
     response = chat_bot.chain.invoke('In my company I want a person for building AI agents, is harshit a good fit for this role, explain with examples.')
-    print('Response:', response)
+    print('\nResponse:', response)
+
+    response = chat_bot.chain.invoke('Who was the first person to walk on the moon.')
+    print('\nResponse:', response)

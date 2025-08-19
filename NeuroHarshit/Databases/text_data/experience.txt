@@ -6,4 +6,4 @@ Experience:
     - Trained a CNN on MNIST dataset for digit classification with 99.11% accuracy, using Tensorflow.
     - Automated a database project using web scraping, reducing manual effort by 99%.
     - Contributed to deploying an AI solution for a client using the OpenAI API, significantly reducing their email response workload.
-    - Preprocessed and fine–tuned data to improve email reply quality by 20%–30%.
+    - Preprocessed and fine-tuned data to improve email reply quality by 20%-30%.
