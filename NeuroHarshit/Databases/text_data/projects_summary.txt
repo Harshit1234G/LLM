@@ -2,12 +2,16 @@
 Duration: Nov 2024 - Dec 2024
 Description: A GUI based software, recognizes Handwritten digits. Built and trained the CNN model from scratch on the MNIST dataset, without relying on pre-trained weights. User can draw digits, add noise, change pensize and import/export the prediction history. Program displays metrics like Probability Distribution, Accuracy, Confidence, Confusion Matrix, and Correct V/S Wrong Predictions. Intuitive buttons, shortcuts, and toggles for seamless user experience.
 Technologies Used: Python, TensorFlow, NumPy, Pandas, Pillow, CustomTkinter, scikit-learn, PyInstaller, Matplotlib, Tkinter, Pickle, and inno setup builder.
+Main Challenge: Creating the GUI
+Real world use case: Used in banking for cheque processing, postal services for reading handwritten zip codes/addresses, and digitizing forms/documents for automation.
 Keywords: Custom Model, Computer Vision, Deep Learning, GUI, Model Deployment
 
 ## Project: NueroHarshit
 Duration: Aug 2025 – Present (Work in Progress)
 Description: An AI-powered personal portfolio assistant built using RAG (Retrieval-Augmented Generation). The system is designed to answer queries about my background, projects, skills, certifications, education, experience, and achievements. It integrates a custom GUI, vector database, LLM, and modular text-based dataset for easy updates.
 Technologies (Planned/Using): Python, OpenAI API, LangChain, FAISS, SQLite, CustomTkinter.
+Main Challenge: Creating a reliable and robust chatbot.
+Real world use case: Demonstrates how AI-powered assistants can automate recruitment processes by answering candidate-related queries, serve as interactive resumes for professionals, or act as intelligent knowledge assistants for companies.
 Keywords: RAG, AI Agent, Portfolio, GUI
 
 ## Project: Human Emotion Detection:
@@ -15,6 +19,8 @@ Duration: Mar 2025 – Mar 2025
 Description: A computer vision project that detects human facial emotions (Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise) using Convolutional Neural Networks (CNNs). Explored multiple architectures including LeNet-5, AlexNet, VGG-16, and ResNet-34. Achieved ~64% accuracy on the FER2013 dataset with VGG-16 after applying data augmentation and fine-tuning. This project was my first step into deep learning for computer vision and gave me strong practical insights into model architecture design, overfitting, and transfer learning.
 Future Work: Plan to revisit this project with improved architectures (EfficientNet, MobileNetV2, Xception), improved dataset and better fine-tuning strategies after gaining more experience.  
 Technologies Used: Python, TensorFlow, OpenCV, NumPy, Matplotlib.
+Main Challenge: Training the CNN
+Real world use case: Useful in customer service (detecting customer emotions in real time), healthcare (supporting mental health monitoring), Security & Surveillance (Can identify suspicious behavior based on emotional cues).
 Keywords: Custom Model, Deep Learning, Real-time Computer Vision Pipeline
 
 ## Learning & Practice Repository: Hands-on-ML

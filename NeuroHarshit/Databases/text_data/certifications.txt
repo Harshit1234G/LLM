@@ -1,18 +1,18 @@
 Certifications:
-1. The Joy of Computing Using Python - NPTEL, IIT Madras (Jul - Oct 2023)
-   - Elite Gold Certificate
-   - Top 5%
-   - Score: 90%
-   - Learned Python programming fundamentals, algorithms, problem-solving, and creative applications of coding.
-   - Worked on assignments covering basic data structures, logic building, and automation tasks.
-2. Python for Data Science - NPTEL, IIT Madras (Jan - Feb 2024)
-   - Elite Gold Certificate
-   - Top 1%
-   - Score: 91%
-   - Gained skills in data analysis, NumPy, Pandas, and data visualization with Matplotlib and Seaborn.
-   - Covered statistical concepts, exploratory data analysis, and basic machine learning workflows.
-Other Certifications:
-- Database Management System - NPTEL, IITKGP (Jul - Sep 2023)
-- Build your first chatbot - IBM, during a seminar at college (Nov 2024)
-- Intro to Machine Learning - Kaggle (2024-04-30)
-- Pandas - Kaggle (2024-05-01)
+1. The Joy of Computing Using Python from NPTEL, IIT Madras (Jul - Oct 2023)
+- I got Elite Gold Certificate
+- I was in 5% toppers
+- Score: 90%
+- Learned Python programming fundamentals, algorithms, problem-solving, and creative applications of coding.
+- Worked on assignments covering basic data structures, logic building, and automation tasks.
+2. Python for Data Science from NPTEL, IIT Madras (Jan - Feb 2024)
+- I got Elite Gold Certificate
+- I was in 1% toppers
+- Score: 91%
+- Gained skills in data analysis, NumPy, Pandas, and data visualization with Matplotlib and Seaborn.
+- Covered statistical concepts, exploratory data analysis, and basic machine learning workflows.
+
+3. Database Management System from NPTEL, IITKGP (Jul - Sep 2023)
+4. Build your first chatbot from IBM, during a seminar at college (Nov 2024)
+5. Intro to Machine Learning from Kaggle (2024-04-30)
+6. Pandas from Kaggle (2024-05-01)

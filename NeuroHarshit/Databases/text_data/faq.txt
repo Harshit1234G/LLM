@@ -1,14 +1,14 @@
+Q: Hello
+A: Hello! I'm NueroHarshit, what do you want to know about Harshit?
+
 Q: Who is Harshit?
 A: Harshit is an aspiring AI/ML engineer passionate about Deep Learning, Computer Vision, and building AI based applications.
-
-Q: Who are you?
-A: I'm NueroHarshit an AI based portfolio chatbot, created by Harshit.
 
 Q: What is Harshit currently doing?
 A: Harshit has completed his Bachelor of Computer Applications (BCA), and currently he is looking for internship/job.
 
 Q: What are Harshit's future goals?
-A: Contributing to Deep Learning related research, getting better at Deep Learning and real world AI-based Applications.
+A: Building several AI based softwares. Then sharpening his Computer Vision skills by learning YOLO, object tracking, sementic segmentation, etc. Then improving his deep learning skills, practicing Reinforcement Learning. Winning kaggle competitions and hackathons. The ultimate goal is to be a researcher and contribute to AI related research.
 
 Q: What projects has Harshit worked on?
 A: Harshit has worked on projects such as Handwritten Digit Recognition (GUI software), Human Emotion Detection (real-time facial expression recognition using CNN and OpenCV), and NueroHarshit (an AI agent system), etc.
@@ -17,25 +17,13 @@ Q: What programming language does Harshit know?
 A: Python.
 
 Q: What frameworks and libraries does Harshit use?
-A: TensorFlow, scikit-learn, NumPy, Pandas, Matplotlib, LangChain, etc.
+A: TensorFlow, scikit-learn, NumPy, Pandas, Matplotlib, LangChain, and more.
 
 Q: What kind of problems is Harshit interested in solving?
-A: Harshit is interested in solving problems related to artificial intelligence and machine learning, particularly in deep learning, computer vision, natural language processing, and building AI-powered applications and agents.
-
-Q: What is the Handwritten Digit Recognition project?  
-A: A GUI-based software that recognizes handwritten digits using a CNN on the MNIST dataset. It lets users draw digits, add noise, adjust pen size, manage history, and view metrics like accuracy, confidence, and confusion matrix.  
-
-Q: What is the Human Emotion Detection project?  
-A: A computer vision system that classifies facial expressions into emotions using a CNN trained on FER2013. It leverages OpenCV for real-time webcam inference.  
-
-Q: What is NueroHarshit?  
-A: An AI-powered chatbot portfolio that answers questions about Harshit’s skills, experiences, and projects using retrieval-augmented generation.  
+A: Harshit is interested in solving problems related to artificial intelligence and machine learning, particularly in deep learning, computer vision, natural language processing, and building AI-powered applications and agents.  
 
 Q: Which repositories are available on Harshit’s GitHub?  
-A: Key repos include “Hands-on-ML” (chapterwise ML implementations from Aurélien Géron’s book) and “Python-for-Data-Analysis” (tutorials and exercises from Wes McKinney’s book), along with project repositories.
-
-Q: What certifications does Harshit have?  
-A: Certifications in areas such as Python programming, Data Analysis, and Database Management Systems, among others.
+A: Along with project repositories, he has practice repositories like “Hands-on-ML” (chapterwise ML implementations from Aurélien Géron’s book) and “Python-for-Data-Analysis” (tutorials and exercises from Wes McKinney’s book).
 
 Q: What is Harshit's educational background?
 A: Harshit has completed a Bachelor of Computer Applications (BCA). And X and XII from RBSE Board.
@@ -50,4 +38,37 @@ Q: What motivates Harshit?
 A: The excitement of learning new technologies, applying them to challenging projects, and seeing them make a real impact motivates Harshit the most.
 
 Q: What are Harshit's weaknesses?
-A: He is Introvert, but he is working on improving his confidence and communication skills by practicing regularly.
+A: Harshit considers himself an introvert, which sometimes makes it harder for him to open up quickly in new environments. However, he is very self-aware of this and is actively working on improving his confidence and communication skills. Through regular practice, participation in discussions, and pushing himself out of his comfort zone, he has already made noticeable progress and is confident that he will overcome this challenge with time.
+
+Q: Why should we hire you?
+A: I bring strong skills in AI/ML, hands-on project experience in computer vision and NLP, and the ability to learn quickly. I am highly motivated to contribute and grow within your company.
+
+Q: What makes you different from other candidates?
+A: I have built multiple end-to-end AI projects independently, combining self-learning with practical application. My adaptability and passion for solving real-world problems set me apart.
+
+Q: What are your strengths?
+A: My key strengths are problem-solving, strong fundamentals in AI/ML, adaptability, and the ability to work independently while meeting deadlines.
+
+Q: Can you handle pressure and deadlines?
+A: Yes, I’m used to managing time effectively, breaking down tasks into achievable goals, and staying focused under pressure.
+
+Q: Do you prefer working in a team or independently?
+A: I’m comfortable with both. I enjoy collaborating in teams, but I’m equally confident in handling responsibilities on my own.
+
+Q: Where do you see yourself in 5 years?
+A: Probably as a Researcher, conducting research and creating and improving large models.
+
+Q: How do you handle feedback?
+A: I value constructive feedback as it helps me grow. I actively apply feedback to improve my work and skills.
+
+Q: How do you keep yourself updated with the latest technology?
+A: I use AI News, look for research papers, I am subscribed to several YouTube channels like 3Blue1Brown, Welch Labs, IBM Technology, and many more for getting up to date knowledge.
+
+Q: Have you faced failures? How did you handle them?
+A: Yes, I’ve faced challenges, especially when projects didn’t initially work out. I treated them as learning opportunities, identified mistakes, and improved my approach.
+
+Q: What kind of company are you looking to work with?
+A: I’m looking for a company that values innovation, encourages learning, and allows me to apply my AI/ML skills to solve meaningful problems.
+
+Q: How do you balance work and hobbies?
+A: I dedicate focused time to work and pursue hobbies like gaming or personal projects during my free time to recharge.
