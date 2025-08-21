@@ -1,0 +1,117 @@
+Python: Python is a versatile programming language known for its simplicity and wide use in AI, web development, and data science.
+
+Machine Learning: Machine Learning is a field of AI where computers learn from data and improve their performance without being explicitly programmed.
+
+Deep Learning: Deep Learning is a subset of machine learning that uses artificial neural networks with many layers to model complex patterns in data.
+
+scikit-learn: scikit-learn is a Python library that provides tools for machine learning, including classification, regression, clustering, and preprocessing.
+
+TensorFlow: TensorFlow is a powerful deep learning framework that allows you to build, train, and deploy machine learning models efficiently.
+
+OpenCV: OpenCV is a computer vision library used for image and video processing, such as face detection, object recognition, and image filtering.
+
+Convolutional Neural Networks: CNNs are a type of deep learning model designed to process images. They automatically learn patterns such as edges, shapes, and objects by applying convolutional filters.
+
+Transfer Learning: Transfer Learning is a technique where a pre-trained model is reused for a new task, saving training time and often improving performance on limited data.
+
+Transformers: Transformers are a deep learning architecture that processes sequential data (like text) using attention mechanisms. They power modern LLMs such as GPT and BERT.
+
+Attention: Attention is a mechanism in neural networks that helps the model focus on the most important parts of the input sequence, improving tasks like translation and summarization.
+
+Pandas: Pandas is a Python library for handling structured data. It makes working with tables, data cleaning, and analysis fast and easy.
+
+NumPy: NumPy is a library for numerical computing in Python. It supports fast operations on large arrays and matrices, which are essential for ML and scientific computing.
+
+Matplotlib: Matplotlib is a Python library for creating plots, charts, and graphs to visualize data.
+
+Seaborn: Seaborn is a visualization library built on top of Matplotlib. It provides high-level functions to create attractive and informative statistical graphics.
+
+Data Cleaning: Data Cleaning is the process of correcting or removing errors and inconsistencies in datasets to improve analysis and model accuracy.
+
+Data Analysis: Data Analysis is examining data to discover useful information, patterns, or insights that support decision-making.
+
+Data Visualization: Data Visualization is representing data using charts and graphs, making patterns and insights easier to understand.
+
+Databases: Databases are systems for storing and managing structured data, enabling efficient storage and retrieval.
+
+SQLite: SQLite is a lightweight relational database stored in a single file, commonly used for small to medium applications.
+
+vector database: A vector database stores data as vectors (numerical representations). It is especially useful in AI for similarity search, like finding related documents or images.
+
+FAISS: FAISS is a library by Facebook AI for fast similarity search on vectors. It’s commonly used in RAG systems and recommendation engines.
+
+Chroma: Chroma is an open-source vector database used for storing embeddings and performing semantic search, often in LLM applications.
+
+LangChain: LangChain is a framework for building applications powered by large language models. It simplifies tasks like retrieval, prompt management, and integration with databases.
+
+LangGraph: LangGraph extends LangChain by enabling graph-based orchestration of AI agents and memory, making multi-step reasoning more structured.
+
+LangSmith: LangSmith is a developer platform for debugging, testing, and monitoring LLM-based applications to ensure reliability and quality.
+
+Hugging Face Transformers: It is a library offering pre-trained models like BERT, GPT, and others, making it easy to apply state-of-the-art NLP models.
+
+Ollama: Ollama is a tool for running large language models locally on your computer, making AI development more private and customizable.
+
+OpenAI API: The OpenAI API provides access to models like GPT for text generation, summarization, question answering, and more.
+
+RAG Systems: Retrieval-Augmented Generation (RAG) systems combine search with generation. They retrieve relevant information from a database and then generate an informed answer.
+
+GUI Development: GUI Development is the process of designing and building graphical user interfaces that allow users to interact with software visually.
+
+Tkinter: Tkinter is Python’s standard library for building simple graphical user interfaces.
+
+CustomTkinter: CustomTkinter extends Tkinter with modern, customizable widgets for better-looking GUIs.
+
+Git: Git is a version control system that tracks changes in code and helps developers collaborate.
+
+GitHub: GitHub is an online platform for hosting Git repositories, enabling collaboration, version control, and open-source sharing.
+
+PyInstaller: PyInstaller is a tool that converts Python applications into standalone executables that run without needing Python installed.
+
+FastAPI: FastAPI is a modern Python web framework for building fast APIs, commonly used for deploying ML models and web services.
+
+Problem-Solving: Problem-Solving is the ability to analyze a challenge, break it down, and find effective solutions.
+
+Self-Learning: Self-Learning is the ability to independently acquire new knowledge and skills without structured guidance.
+
+Linear Algebra: Linear Algebra is a branch of mathematics dealing with vectors and matrices, forming the foundation of machine learning and computer graphics.
+
+Analytic Geometry: Analytic Geometry uses algebra and coordinates to represent and solve geometric problems, useful in computer graphics and AI.
+
+Matrix Decomposition: Matrix Decomposition refers to breaking matrices into simpler forms like LU or SVD. It is used in data compression, recommendation systems, and ML optimization.
+
+Vector Calculus: Vector Calculus studies differentiation and integration of vector fields, important in optimization and neural network training.
+
+Probability & Distributions: Probability is the study of uncertainty, and distributions describe how values are spread in data. They are core to statistics and ML.
+
+Continous Optimization: Continuous Optimization is the process of finding the best solution for problems with continuous variables, crucial in training ML models.
+
+MNIST: MNIST is a benchmark dataset of handwritten digits used for testing and training image recognition models.
+
+Web Scraping: Web Scraping is extracting data from websites, often for analysis, research, or training datasets.
+
+selenium: Selenium is a framework for automating web browsers. It is often used for testing and scraping.
+
+AI solution: An AI solution is an application of artificial intelligence techniques to solve real-world problems or automate tasks.
+
+Preprocessing: Preprocessing refers to preparing raw data for analysis or modeling, such as normalization, resizing, or encoding.
+
+fine-tuning: Fine-tuning means taking a pre-trained model and adjusting it on a specific dataset to improve performance for that task.
+
+Probability Distribution: A Probability Distribution shows how likely different outcomes are in a dataset or experiment.
+
+Accuracy: Accuracy is a metric that measures how many predictions a model got correct compared to the total.
+
+Confidence: Confidence represents how sure a model is about its prediction, usually expressed as a probability.
+
+Confusion Matrix: A Confusion Matrix is a table showing how many predictions were correct and where the model got confused between classes.
+
+computer vision: Computer Vision is a field of AI that enables computers to understand and interpret images and videos.
+
+natural language processing: NLP is a field of AI focused on enabling computers to understand, generate, and interact with human language.
+
+model deployment: Model Deployment is the process of making a trained ML model available for use in real-world applications.
+
+portfolio: A portfolio is a collection showcasing your projects, skills, and achievements.
+
+AI agent: An AI agent is a system that can make decisions and perform tasks autonomously using AI techniques.

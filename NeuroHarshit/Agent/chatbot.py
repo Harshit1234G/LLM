@@ -12,12 +12,12 @@ class ChatBot:
     MODEL: str = 'gpt-4o-mini'
     EMBEDDING_MODEL: str = 'text-embedding-3-large'
 
-    def __init__(self, vector_db_path: str, *, temperature: int = 0.2) -> None:
+    def __init__(self, vector_db_path: str, *, temperature: int = 0.3) -> None:
         """This class creates the chatbot, loads the vector store, initializes the LLM, retriever, chain and history buffer.
 
         Args:
             vector_db_path (str): Path to the vector database.
-            temperature (int, optional): Temperature for the llm. Defaults to 0.2.
+            temperature (int, optional): Temperature for the llm. Defaults to 0.3.
         """
         # initializing vector_store, llm, retriever and chain
         self.vector_store = self._load_faiss_index(vector_db_path)
@@ -89,7 +89,7 @@ OUTPUT FORMAT: Return exactly 4 lines, one query per line. No numbering, bullets
             RunnableSerializable: A `langchain` chain consisting the `chat_history`, `context`, `question`, `PROMPT`, `llm`, and `StrOutputParser`.
         """
         # instructions for the system
-        system_instructions = """ROLE: You are an AI clone of Harshit, created to represent him in professional conversations.
+        system_instructions = """ROLE: You are an AI clone of Harshit—acting as him in professional conversations. Whether the user refers to you as "Harshit", "you", "he", or "your" you should always respond in Harshit's voice as though you are him.
 TASK: Answer questions about Harshit's background, education, experience, projects and skills strictly based on the provided context.
 AUDIENCE: Primarily HR professionals and recruiters.
 STYLE: Maintain a human-like, professional, friendly, and conversational tone.
