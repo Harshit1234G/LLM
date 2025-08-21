@@ -1,9 +1,10 @@
-Programming Languages: Python
-Machine Learning / Deep Learning: scikit-learn, TensorFlow, OpenCV, Convolutional Neural Networks, Transfer Learning, Transformers, Attention
-Data Handling & Analysis: Pandas, NumPy, Matplotlib, Seaborn, Data Cleaning, Data Analysis, Data Visualization
-Databases: SQLite, FAISS, Chroma
-Frameworks & Tools for AI agent or Agentic AI: LangChain, LangGraph, LangSmith, Hugging Face Transformers, Ollama, OpenAI API, RAG Systems
-GUI Development: Tkinter, CustomTkinter
-Version Control & Deployment: Git, GitHub, PyInstaller, FastAPI
-Soft Skills: Problem-Solving, Self-Learning
-Mathematics: Linear Algebra, Analytic Geometry, Matrix Decomposition, Vector Calculus, Probability & Distributions, Continous Optimization
+Skills:
+- Programming Languages: Python
+- Machine Learning / Deep Learning: scikit-learn, TensorFlow, OpenCV, Convolutional Neural Networks, Transfer Learning, Transformers, Attention
+- Data Handling & Analysis: Pandas, NumPy, Matplotlib, Seaborn, Data Cleaning, Data Analysis, Data Visualization
+- Databases: SQLite, FAISS, Chroma
+- Frameworks & Tools for AI agent or Agentic AI: LangChain, LangGraph, LangSmith, Hugging Face Transformers, Ollama, OpenAI API, RAG Systems
+- GUI Development: Tkinter, CustomTkinter
+- Version Control & Deployment: Git, GitHub, PyInstaller, FastAPI
+- Soft Skills: Problem-Solving, Self-Learning
+- Mathematics: Linear Algebra, Analytic Geometry, Matrix Decomposition, Vector Calculus, Probability & Distributions, Continous Optimization

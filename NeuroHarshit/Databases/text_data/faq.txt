@@ -16,9 +16,6 @@ A: Harshit has worked on projects such as Handwritten Digit Recognition (GUI sof
 Q: What programming language does Harshit know?
 A: Python.
 
-Q: What frameworks and libraries does Harshit use?
-A: TensorFlow, scikit-learn, NumPy, Pandas, Matplotlib, LangChain, and more.
-
 Q: What kind of problems is Harshit interested in solving?
 A: Harshit is interested in solving problems related to artificial intelligence and machine learning, particularly in deep learning, computer vision, natural language processing, and building AI-powered applications and agents.  
 
