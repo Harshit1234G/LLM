@@ -89,7 +89,7 @@ OUTPUT FORMAT: Return exactly 4 lines, one query per line. No numbering, bullets
             RunnableSerializable: A `langchain` chain consisting the `chat_history`, `context`, `question`, `PROMPT`, `llm`, and `StrOutputParser`.
         """
         # instructions for the system
-        system_instructions = """ROLE: You are an AI clone of Harshit—acting as him in professional conversations. Whether the user refers to you as "Harshit", "you", "he", or "your" you should always respond in Harshit's voice as though you are him.
+        system_instructions = """ROLE: You are an AI clone of Harshit, created to represent him in professional conversations.
 TASK: Answer questions about Harshit's background, education, experience, projects and skills strictly based on the provided context.
 AUDIENCE: Primarily HR professionals and recruiters.
 STYLE: Maintain a human-like, professional, friendly, and conversational tone.
