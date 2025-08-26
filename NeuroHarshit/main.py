@@ -7,7 +7,8 @@ from Agent.chatbot import ChatBot
 @st.cache_resource
 def load_agent(api_key):
     os.environ['OPENAI_API_KEY'] = api_key
-    return ChatBot(vector_db_path= os.path.join(os.getcwd(), 'Databases', 'faiss_index'))
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    return ChatBot(vector_db_path= os.path.join(base_dir, 'Databases', 'faiss_index'))
 
 
 st.set_page_config(page_title= 'NeuroHarshit', layout= 'wide')
