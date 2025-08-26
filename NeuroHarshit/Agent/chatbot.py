@@ -338,16 +338,26 @@ class ChatBot:
 
 if __name__ == '__main__':
     from dotenv import load_dotenv
+    import getpass
+    import os
+
     load_dotenv()
+
+    if not os.environ.get('OPENAI_API_KEY'):
+        os.environ['OPENAI_API_KEY'] = getpass.getpass('Enter your OpenAI API key: ')
 
 
     chat_bot = ChatBot(vector_db_path= r'E:\Python\LLM\NeuroHarshit\Databases\faiss_index')
 
+    print('======================* NeuroHarshit *======================\n')
+    print('🤖 Ask anything about Harshit (type "quit" or "exit" to quit)')
     while True:
-        question = input('\nQuestion: ')
+        question = input('\nYou: ')
 
-        if question == 'quit':
+        if question.lower() in ('quit', 'exit'):
+            print('\nGoodbye 👋')
             break
         
         response = chat_bot.run(question)
-        print('\nResponse:', response)
+        print('\nBot:', response)
+        print('\n-------------------------------------------------------')
