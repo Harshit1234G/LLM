@@ -88,12 +88,12 @@ class ChatBot:
         """Prompt for rewriting user query based on the chat history."""
         system_instructions = (
             "ROLE: You are a careful assistant.\n"
-            "TASK: Your task is to rewrite follow-up user queries into a clear, self-contained standalone question based on CHAT HISTORY.\n"
+            "TASK: Your task is to rewrite follow-up user queries into a clear, self-contained standalone query based on CHAT HISTORY.\n"
             "CONSTRAINTS:\n"
             "- You must strictly preserve the user's intent and meaning. Do not add, remove, or invent details.\n"
             "- If the user's query is already standalone, return it unchanged.\n"
             "- If the message is vague and cannot be rewritten faithfully, just return it as-is without modification.\n"
-            "OUTPUT: Return only the rewritten standalone question."
+            "OUTPUT: Return only the rewritten standalone query."
         )
         return ChatPromptTemplate(
             messages= [

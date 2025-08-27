@@ -7,13 +7,13 @@ Projects:
 - Real world use case of Handwritten Digit Recognition: Used in banking for cheque processing, postal services for reading handwritten zip codes/addresses, and digitizing forms/documents for automation.
 - Keywords for Handwritten Digit Recognition: Custom Model, Computer Vision, Deep Learning, GUI, Model Deployment
 
-2. NueroHarshit:
-- Duration of NueroHarshit: Aug 2025 – Present (Work in Progress)
-- Description of NueroHarshit: An AI-powered personal portfolio assistant built using RAG (Retrieval-Augmented Generation). The system is designed to answer queries about my background, projects, skills, certifications, education, experience, and achievements. It integrates a custom GUI, vector database, LLM, and modular text-based dataset for easy updates.
-- Technologies (Planned/Using) of NueroHarshit: Python, OpenAI API, LangChain, FAISS, SQLite, CustomTkinter.
-- Main Challenge of NueroHarshit: Creating a reliable and robust chatbot.
-- Real world use case of NueroHarshit: Demonstrates how AI-powered assistants can automate recruitment processes by answering candidate-related queries, serve as interactive resumes for professionals, or act as intelligent knowledge assistants for companies.
-- Keywords for NueroHarshit: RAG, AI Agent, Portfolio, GUI
+2. NeuroHarshit:
+- Duration of NeuroHarshit: Aug 2025 – Aug 2025
+- Description of NeuroHarshit: An AI-powered personal portfolio assistant built using RAG (Retrieval-Augmented Generation). The system is designed to answer queries about my background, projects, skills, certifications, education, and experience. It has four core components: Rewriter (rewrites the follow-up user queries based on the chat history), Retriever (it retrieves the relevant documents using multi query retrieval), Generator (it generates a response based on the rewritten query and the relevant documents), and last Finalizer (which just finalizes the response). Also built an API using FastAPI and a streamlit app for showcasing the chatbot.
+- Technologies used in NeuroHarshit: Python, OpenAI API, LangChain, LangGraph, FAISS, Streamlit, FastAPI.
+- Main Challenge of NeuroHarshit: Creating a reliable and robust chatbot, and creating the chat history and follow-up question mechanism.
+- Real world use case of NeuroHarshit: Demonstrates how AI-powered assistants can automate recruitment processes by answering candidate-related queries, serve as interactive resumes for professionals, or act as intelligent knowledge assistants for companies.
+- Keywords for NeuroHarshit: RAG, AI Agent, Portfolio Website
 
 3. Human Emotion Detection:
 - Duration of Human Emotion Detection: Mar 2025 – Mar 2025
