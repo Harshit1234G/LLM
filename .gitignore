@@ -3,3 +3,4 @@ llm_env
 OllamaModels
 .env
 __pycache__
+test.py
