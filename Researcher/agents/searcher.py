@@ -49,11 +49,11 @@ class SearcherAgent(BaseAgent):
         match source:
             case 'wiki':
                 state['wikipedia_docs'] = wiki_tool(topic)
-                state['arxiv_docs'] = None
+                state['arxiv_docs'] = ''
 
             case 'arxiv':
                 state['arxiv_docs'] = arxiv_tool(topic)
-                state['wikipedia_docs'] = None
+                state['wikipedia_docs'] = ''
 
             case 'both':
                 state['wikipedia_docs'] = wiki_tool(topic)

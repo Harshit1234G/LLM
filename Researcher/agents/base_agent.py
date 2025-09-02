@@ -9,8 +9,9 @@ from config import DEFAULT_MODEL, SMALL_MODEL
 class ResearchState(TypedDict):
     topic: str
     source: str
-    wikipedia_docs: str | None
-    arxiv_docs: str | None
+    wikipedia_docs: str
+    arxiv_docs: str
+    summary: str
 
 
 class BaseAgent:
