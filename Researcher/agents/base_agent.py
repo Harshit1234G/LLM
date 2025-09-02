@@ -1,7 +1,6 @@
-from typing import Any
 from typing_extensions import TypedDict
 
-from langchain_core.prompts import BasePromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
 from config import DEFAULT_MODEL, SMALL_MODEL
@@ -9,16 +8,16 @@ from config import DEFAULT_MODEL, SMALL_MODEL
 
 class ResearchState(TypedDict):
     topic: str
-    wikipedia_docs: list[dict[str, Any]]
-    arxiv_docs: list[dict[str, Any]]
-    news: str
+    source: str
+    wikipedia_docs: str | None
+    arxiv_docs: str | None
 
 
 class BaseAgent:
     def __init__(
             self, 
             name: str, 
-            instructions: BasePromptTemplate, 
+            instructions: ChatPromptTemplate, 
             temperature: float,
             *, 
             use_small_model: bool = False,
@@ -33,14 +32,14 @@ class BaseAgent:
         # core components
         self.llm = ChatOpenAI(
             model= self.model,
-            temperature= self.temperature
+            temperature= self.temperature,
             **llm_kwargs
         )
 
 
-    async def run(self, state: ResearchState) -> dict[str, Any]:
+    def run(self, state: ResearchState) -> ResearchState:
         raise NotImplementedError('Subclasses must implement run()')
     
 
-    async def stream(self, state: ResearchState) -> dict[str, Any]:
-        return await self.run(state)
+    def stream(self, state: ResearchState) -> ResearchState:
+        return self.run(state)

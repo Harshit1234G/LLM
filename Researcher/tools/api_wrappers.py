@@ -1,10 +1,7 @@
 from langchain_community.utilities import ArxivAPIWrapper, WikipediaAPIWrapper
-from langchain_core.tools import tool
-
 from config import DOC_CONTENT_MAX_CHARS
 
 
-@tool
 def wiki_tool(topic: str) -> str:
     """Search Wikipedia for the given topic and return the most relevant page content.
 
@@ -12,7 +9,7 @@ def wiki_tool(topic: str) -> str:
         topic (str): The subject or keyword to search on Wikipedia.
 
     Returns:
-        str: Top three retrieved Wikipedia articles, including title, source, and content.
+        str: Top three retrieved Wikipedia articles, including title, source, and content. Separated by `---`.
     """
     try:
         wiki = WikipediaAPIWrapper(
@@ -38,8 +35,6 @@ def wiki_tool(topic: str) -> str:
         return f"error: Wikipedia search failed: {str(e)}"
 
 
-
-@tool
 def arxiv_tool(topic: str) -> str:
     """Search Arxiv for academic papers related to the given topic.
 
@@ -47,7 +42,7 @@ def arxiv_tool(topic: str) -> str:
         topic (str): The research subject or keyword to query on Arxiv.
 
     Returns:
-        str: Top three retrieved research papers, including title, publishing date, authors, source and content.
+        str: Top three retrieved research papers, including title, publishing date, authors, source and content. Separated by `---`.
     """
     try:
         arxiv = ArxivAPIWrapper(
