@@ -11,7 +11,7 @@ class ResearchState(TypedDict):
     source: str
     wikipedia_docs: str
     arxiv_docs: str
-    summary: str
+    knowledge: str
 
 
 class BaseAgent:
