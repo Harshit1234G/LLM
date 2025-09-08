@@ -14,6 +14,8 @@ class ResearchState(TypedDict):
     arxiv_docs: str
     knowledge: dict[str, Any]
     report_parts: list[str]
+    critic_index: list[int]
+    is_criticized: bool
     final_report: str
 
 class BaseAgent:

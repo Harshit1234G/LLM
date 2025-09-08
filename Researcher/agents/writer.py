@@ -63,7 +63,7 @@ class WriterAgent(BaseAgent):
             self.logger.info(f'Expanding topic: {topic.get("title")}')
             try:
                 text = self.llm.invoke(
-                    self.instructions.format_messages(input_json=topic)
+                    self.instructions.format_messages(input_json= topic)
                 ).content.strip()
                 state['report_parts'].append(text)
 
