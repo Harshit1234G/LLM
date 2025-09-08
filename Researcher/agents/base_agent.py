@@ -1,3 +1,4 @@
+from typing import Any
 from typing_extensions import TypedDict
 
 from langchain_core.prompts import ChatPromptTemplate
@@ -11,8 +12,9 @@ class ResearchState(TypedDict):
     source: str
     wikipedia_docs: str
     arxiv_docs: str
-    knowledge: str
-
+    knowledge: dict[str, Any]
+    report_parts: list[str]
+    final_report: str
 
 class BaseAgent:
     def __init__(

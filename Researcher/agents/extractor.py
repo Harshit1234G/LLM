@@ -1,3 +1,4 @@
+import json
 from langchain_core.prompts import ChatPromptTemplate
 from agents import BaseAgent
 
@@ -73,4 +74,4 @@ class ExtractorAgent(BaseAgent):
             self.instructions.format_messages(topic= state['topic'], docs= docs)
         ).content.strip()
 
-        return {'knowledge': knowledge}
+        return {'knowledge': json.loads(knowledge)}
