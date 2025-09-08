@@ -1,9 +1,13 @@
 from langchain_core.prompts import ChatPromptTemplate
+
 from agents import BaseAgent
+from utils import get_logger
 
 
 class WriterAgent(BaseAgent):
     def __init__(self):
+        self.logger = get_logger(self.__class__.__name__)
+        
         prompt = ChatPromptTemplate(
             messages= [
                 (
@@ -42,18 +46,31 @@ class WriterAgent(BaseAgent):
             instructions= prompt,
             temperature= 0.5
         )
+        self.logger.info('WriterAgent initialized.')
+
 
     def run(self, state):
+        self.logger.info('WriterAgent started.')
         knowledge = state.get('knowledge')
+
         if knowledge is None:
+            self.logger.error('No value for knowledge is provided.')
             raise ValueError('No value for knowledge is provided.')
         
         state['report_parts'] = []
 
         for topic in knowledge.get('topics'):
-            text = self.llm.invoke(
-                self.instructions.format_messages(input_json= topic)
-            ).content.strip()
-            state['report_parts'].append(text)
+            self.logger.info(f'Expanding topic: {topic.get("title")}')
+            try:
+                text = self.llm.invoke(
+                    self.instructions.format_messages(input_json=topic)
+                ).content.strip()
+                state['report_parts'].append(text)
 
+                self.logger.info(f'Successfully expanded topic: {topic.get("title")}')
+
+            except Exception as e:
+                self.logger.exception(f'Error while expanding topic {topic.get("title")}: {e}')
+
+        self.logger.info('WriterAgent finished.')
         return state

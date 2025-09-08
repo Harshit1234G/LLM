@@ -2,37 +2,44 @@ import logging
 import os
 from datetime import datetime
 
+# Global session log filename
+SESSION_LOG_FILE = None
+
 
 def get_logger(name: str) -> logging.Logger:
     """
-    Creates a logger instance that writes logs into logs/session_<timestamp>.log
-    
+    Creates a logger instance that writes logs into the same session log file.
+
     Args:
         name (str): Name of the logger (e.g. module or agent name).
-    
+
     Returns:
         logging.Logger: Configured logger object.
     """
-    os.makedirs('logs', exist_ok= True)
-    log_filename = datetime.now().strftime('logs/session_%Y-%m-%d_%H-%M-%S.log')
+    global SESSION_LOG_FILE
+
+    # Initialize session log file once
+    if SESSION_LOG_FILE is None:
+        os.makedirs('logs', exist_ok= True)
+        SESSION_LOG_FILE = datetime.now().strftime('logs/session_%Y-%m-%d_%H-%M-%S.log')
 
     # logging configuration
     logger = logging.getLogger(name)
-    logger.setLevel(logging.DEBUG)
+    logger.setLevel(logging.INFO)
 
-    # writing logs to file
-    file_handler = logging.FileHandler(log_filename, mode= 'a', encoding= 'utf-8')
-    file_handler.setLevel(logging.DEBUG)
-
-    # Common formatter
-    formatter = logging.Formatter(
-        '[%(asctime)s] [%(levelname)s] [%(name)s]: %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S'
-    )
-    file_handler.setFormatter(formatter)
-
-    # Avoid duplicate handlers when calling multiple times
+    # Avoid duplicate handlers when logger already configured
     if not logger.handlers:
+        # writing logs to file
+        file_handler = logging.FileHandler(SESSION_LOG_FILE, mode= 'a', encoding= 'utf-8')
+        file_handler.setLevel(logging.INFO)
+
+        # Common formatter
+        formatter = logging.Formatter(
+            '[%(asctime)s] [%(levelname)s] [%(name)s]: %(message)s',
+            datefmt= '%Y-%m-%d %H:%M:%S'
+        )
+        file_handler.setFormatter(formatter)
+
         logger.addHandler(file_handler)
 
     return logger

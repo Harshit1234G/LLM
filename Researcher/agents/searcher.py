@@ -2,10 +2,13 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from tools import wiki_tool, arxiv_tool
 from agents import BaseAgent
+from utils import get_logger
 
 
 class SearcherAgent(BaseAgent):
     def __init__(self):
+        self.logger = get_logger(self.__class__.__name__)
+
         prompt = ChatPromptTemplate(
             messages= [
                 (
@@ -29,35 +32,47 @@ class SearcherAgent(BaseAgent):
             temperature= 0.0,
             use_small_model= True
         )
+        self.logger.info('SearcherAgent initialized.')
 
 
     def __decide_source(self, topic: str) -> str:
         source = self.llm.invoke(
             self.instructions.format_messages(topic= topic)
         ).content.strip().lower()
+        
+        self.logger.info(f'Decided source: {source}')
         return source
 
 
     def run(self, state):
+        self.logger.info('SearcherAgent started.')
+
         topic = state.get('topic', None)
         if topic is None:
+            self.logger.error('No value for "topic" was provided.')
             raise ValueError('No value for "topic" was provided.')
 
-        source = self.__decide_source(topic)
-        state['source'] = source
+        try:
+            source = self.__decide_source(topic)
+            state['source'] = source
 
-        match source:
-            case 'wiki':
-                state['wikipedia_docs'] = wiki_tool(topic)
-                state['arxiv_docs'] = ''
+            match source:
+                case 'wiki':
+                    state['wikipedia_docs'] = wiki_tool(topic)
+                    state['arxiv_docs'] = ''
 
-            case 'arxiv':
-                state['arxiv_docs'] = arxiv_tool(topic)
-                state['wikipedia_docs'] = ''
+                case 'arxiv':
+                    state['arxiv_docs'] = arxiv_tool(topic)
+                    state['wikipedia_docs'] = ''
 
-            case 'both':
-                state['wikipedia_docs'] = wiki_tool(topic)
-                state['arxiv_docs'] = arxiv_tool(topic)
+                case 'both':
+                    state['wikipedia_docs'] = wiki_tool(topic)
+                    state['arxiv_docs'] = arxiv_tool(topic)
+
+        except Exception as e:
+            self.logger.exception(f'Error while retrieving documents: {e}')
+
+        self.logger.info('Successfully loaded the documents.')
 
         return state
                 

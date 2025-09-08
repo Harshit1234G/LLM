@@ -1,10 +1,14 @@
 import json
 from langchain_core.prompts import ChatPromptTemplate
+
 from agents import BaseAgent
+from utils import get_logger
 
 
 class ExtractorAgent(BaseAgent):
     def __init__(self):
+        self.logger = get_logger(self.__class__.__name__)
+
         prompt = ChatPromptTemplate(
             messages= [
                 (
@@ -66,12 +70,27 @@ class ExtractorAgent(BaseAgent):
             temperature= 0.0,
             use_small_model= True
         )
+        self.logger.info('ExtractorAgent initialized.')
 
 
     def run(self, state):
-        docs = state.get('wikipedia_docs') + state.get('arxiv_docs')
-        knowledge = self.llm.invoke(
-            self.instructions.format_messages(topic= state['topic'], docs= docs)
-        ).content.strip()
+        topic = state.get('topic')
+        self.logger.info(f'Starting extraction for topic: "{topic}"')
 
-        return {'knowledge': json.loads(knowledge)}
+        docs = state.get('wikipedia_docs', '') + state.get('arxiv_docs', '')
+        self.logger.info('Combined the documents.')
+
+        try:
+            response = self.llm.invoke(
+                self.instructions.format_messages(topic= topic, docs= docs)
+            ).content.strip()
+            self.logger.info('LLM response received.')
+
+            knowledge = json.loads(response)
+            self.logger.info(f'Successfully parsed knowledge JSON for topic "{topic}"')
+
+        except json.JSONDecodeError as e:
+            self.logger.error(f'Failed to parse LLM output as JSON: {e}')
+            self.logger.debug(f'Raw LLM output:\n{response}')
+
+        return {'knowledge': knowledge}
