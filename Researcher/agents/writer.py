@@ -51,7 +51,7 @@ class WriterAgent(BaseAgent):
 
     def run(self, state):
         self.logger.info('WriterAgent started.')
-        knowledge = state.get('knowledge')
+        knowledge = state.get('knowledge', None)
 
         if knowledge is None:
             self.logger.error('No value for knowledge is provided.')
