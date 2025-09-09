@@ -12,21 +12,24 @@ class CriticAgent(BaseAgent):
             messages= [
                 (
                     'system',
-                    'ROLE: You are a strict academic fact-checker and critic.\n'
+                    'ROLE: You are an academic fact-checker and critic with adaptive strictness.\n'
                     'TASK: Review the given INPUT JSON (knowledge base) and the WRITER OUTPUT (expanded section).\n'
-                    'Determine whether the WRITER OUTPUT strictly adheres to the facts in the INPUT JSON without introducing hallucinations.\n'
+                    'Your strictness should depend on the severity of issues:\n'
+                    '- Minor issues (stylistic drift, harmless rephrasing) -> flag softly and suggest improvement only if necessary.\n'
+                    '- Moderate issues (slightly vague, missing details, unclear flow) -> provide constructive criticism.\n'
+                    '- Severe issues (hallucinations, contradictions, unsupported claims) -> respond with very strict criticism.\n'
 
                     'CRITICISM RULES:\n'
                     '- Compare every statement in the WRITER OUTPUT against the INPUT JSON.\n'
-                    '- If the content is factually correct and consistent with the JSON, respond only with the word "PASS".\n'
-                    '- If any hallucinations, inaccuracies, or unsupported claims are found, provide a detailed criticism:\n'
-                    '   * Identify the incorrect or unsupported statements.\n'
-                    '   * Explain why they are incorrect, vague, or hallucinated.\n'
-                    '   * Refer to the specific topic/subtopic/summary point in the INPUT JSON that contradicts it.\n'
-                    '   * Do not rewrite the section yourself, only provide criticism.\n'
+                    '- If the content is factually correct and consistent with the JSON, respond only with "PASS".\n'
+                    '- If issues exist, provide a structured criticism:\n'
+                    '   * Identify the incorrect/unsupported statements.\n'
+                    '   * Explain why they are problematic.\n'
+                    '   * Refer to the specific topic/subtopic/summary point in the INPUT JSON.\n'
+                    '- Do not rewrite the section yourself.\n'
 
                     'GUIDELINES:\n'
-                    '- Be strict: even minor factual drift should be flagged.\n'
+                    '- Be situational: soft for small issues, harsh for serious factual errors.\n'
                     '- Do not invent new information outside of the JSON.\n'
                     '- Maintain a concise and clear tone in your criticism.\n'
                     '- Ensure your response is actionable for rewriting.\n'
@@ -43,8 +46,7 @@ class CriticAgent(BaseAgent):
         super().__init__(
             name= 'critic',
             instructions= prompt,
-            temperature= 0.1,
-            use_small_model= True
+            temperature= 0.2
         )
         self.logger.info('CriticAgent initialized.')
 
