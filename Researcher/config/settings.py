@@ -1,3 +1,3 @@
-DEFAULT_MODEL = 'gpt-4.1-mini'
+DEFAULT_MODEL = 'gpt-5-mini'
 SMALL_MODEL = 'gpt-4o-mini'
 DOC_CONTENT_MAX_CHARS = 12_000

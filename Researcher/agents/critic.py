@@ -43,7 +43,8 @@ class CriticAgent(BaseAgent):
         super().__init__(
             name= 'critic',
             instructions= prompt,
-            temperature= 0.3
+            temperature= 0.1,
+            use_small_model= True
         )
         self.logger.info('CriticAgent initialized.')
 
@@ -56,10 +57,10 @@ class CriticAgent(BaseAgent):
             self.logger.error('No value for report_parts is provided.')
             raise ValueError('No value for report_parts is provided.')
         
-        criticism = []
+        criticism = {}
 
         for index, part in enumerate(report_parts):
-            self.logger.info(f'Criticizing part: {index}')
+            self.logger.info(f'Criticizing part: {index + 1}')
 
             try:
                 prompt = self.instructions.format_messages(
@@ -67,17 +68,12 @@ class CriticAgent(BaseAgent):
                     writer_output= part
                 )
                 response = self.llm.invoke(prompt).content.strip()
-                criticism.append(
-                    {
-                        'index': index,
-                        'criticism': response
-                    }
-                )
+                criticism[index] = response
 
-                self.logger.info(f'Successfully criticized part {index}: {response}')
+                self.logger.info(f'Successfully criticized part {index + 1}, Status: {response if response == 'PASS' else 'FAIL'}')
 
             except Exception as e:
-                self.logger.exception(f'Error while criticising part {index}: {e}')
+                self.logger.exception(f'Error while criticising part {index + 1}: {e}')
                 return
 
         self.logger.info('CriticAgent finished.')

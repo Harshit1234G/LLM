@@ -18,7 +18,7 @@ class ExtractorAgent(BaseAgent):
 
                     'GUIDELINES:\n'
                     '- Focus on capturing all key ideas, concepts, results, methods, and implications.\n'
-                    '- Do no copy everything, condense where possible, but never drop unique insights.\n'
+                    '- Do not copy everything, condense where possible, but never drop unique insights.\n'
                     '- Aim for clarity, completeness, and conciseness.\n'
                     '- Merge overlapping information from different documents, avoid redundancy.\n'
                     '- Keep comprehensive and detailed summary.\n'
@@ -67,8 +67,7 @@ class ExtractorAgent(BaseAgent):
         super().__init__(
             name= 'extractor',
             instructions= prompt,
-            temperature= 0.0,
-            use_small_model= True
+            temperature= 0.0
         )
         self.logger.info('ExtractorAgent initialized.')
 

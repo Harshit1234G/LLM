@@ -14,9 +14,8 @@ class ResearchState(TypedDict):
     arxiv_docs: str
     knowledge: dict[str, Any]
     report_parts: list[str]
-    criticism: list[dict[int, str]]
+    criticism: dict[int, str]
     is_criticized: bool
-    final_report: str
 
 class BaseAgent:
     def __init__(
@@ -44,7 +43,3 @@ class BaseAgent:
 
     def run(self, state: ResearchState) -> ResearchState:
         raise NotImplementedError('Subclasses must implement run()')
-    
-
-    def stream(self, state: ResearchState) -> ResearchState:
-        return self.run(state)
