@@ -56,7 +56,7 @@ class CriticAgent(BaseAgent):
             self.logger.error('No value for report_parts is provided.')
             raise ValueError('No value for report_parts is provided.')
         
-        state['criticism'] = []
+        criticism = []
 
         for index, part in enumerate(report_parts):
             self.logger.info(f'Criticizing part: {index}')
@@ -66,18 +66,22 @@ class CriticAgent(BaseAgent):
                     input_json= state.get('knowledge'), 
                     writer_output= part
                 )
-                criticism = self.llm.invoke(prompt).content.strip()
-                state['criticism'].append(
+                response = self.llm.invoke(prompt).content.strip()
+                criticism.append(
                     {
                         'index': index,
-                        'criticism': criticism
+                        'criticism': response
                     }
                 )
 
-                self.logger.info(f'Successfully criticized part {index}: {criticism}')
+                self.logger.info(f'Successfully criticized part {index}: {response}')
 
             except Exception as e:
                 self.logger.exception(f'Error while criticising part {index}: {e}')
+                return
 
         self.logger.info('CriticAgent finished.')
-        return state
+        return {
+            'criticism': criticism,
+            'is_criticized': True
+        }

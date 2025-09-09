@@ -57,20 +57,21 @@ class WriterAgent(BaseAgent):
             self.logger.error('No value for knowledge is provided.')
             raise ValueError('No value for knowledge is provided.')
         
-        state['report_parts'] = []
+        report_parts = []
 
         for topic in knowledge.get('topics'):
-            self.logger.info(f'Expanding topic: {topic.get("title")}')
+            title = topic.get('title')
+            self.logger.info(f'Expanding topic: {title}')
             try:
                 text = self.llm.invoke(
                     self.instructions.format_messages(input_json= topic)
                 ).content.strip()
-                state['report_parts'].append(text)
+                report_parts.append(text)
 
-                self.logger.info(f'Successfully expanded topic: {topic.get("title")}')
+                self.logger.info(f'Successfully expanded topic: {title}')
 
             except Exception as e:
-                self.logger.exception(f'Error while expanding topic {topic.get("title")}: {e}')
+                self.logger.exception(f'Error while expanding topic {title}: {e}')
 
         self.logger.info('WriterAgent finished.')
-        return state
+        return {'report_parts': report_parts}
