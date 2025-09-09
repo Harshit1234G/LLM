@@ -37,27 +37,34 @@ class ExtractorAgent(BaseAgent):
 
                     'JSON SCHEMA:\n'
                     '{{\n'
-                    '  "topic": "string",\n'
+                    '  "topic": "string (non-empty)",\n'
+                    '  "introduction": "string (non-empty)",\n'
                     '  "sources": [\n'
-                    '    {{"id": "string", "title": "string", "authors": ["string", "..."], "source": "string", "url": "string"}}\n'
+                    '    {{\n'
+                    '      "id": "integer (unique, required)",\n'
+                    '      "title": "string (non-empty)",\n'
+                    '      "authors": ["string (non-empty)", "..."],\n'
+                    '      "source": "string (Wikipedia or arXiv, non-empty)",\n'
+                    '      "url": "string (valid URL)"\n'
+                    '    }}\n'
                     '  ],\n'
                     '  "topics": [\n'
                     '    {{\n'
-                    '      "id": "t<number>",\n'
-                    '      "title": "string",\n'
-                    '      "summary_points": ["string", "..."],\n'
+                    '      "id": "string matching pattern: t<number>",\n'
+                    '      "title": "string (non-empty)",\n'
+                    '      "summary_points": ["string (non-empty)", "... (at least 1 required)"],\n'
                     '      "subtopics": [\n'
                     '        {{\n'
-                    '          "id": "t<number>.<number>",\n'
-                    '          "title": "string",\n'
-                    '          "summary_points": ["string", "..."],\n'
-                    '          "references": ["source_id_1", "source_id_2", "..."]\n'
+                    '          "id": "string matching pattern: t<number>.<number>",\n'
+                    '          "title": "string (non-empty)",\n'
+                    '          "summary_points": ["string (non-empty)", "... (at least 1 required)"],\n'
+                    '          "references": ["integer (must match a valid source id)", "... (at least 1 required)"]\n'
                     '        }}\n'
                     '      ],\n'
-                    '      "references": ["source_id_1", "source_id_2", "..."]\n'
+                    '      "references": ["integer (must match a valid source id)", "... (at least 1 required)"]\n'
                     '    }}\n'
                     '  ],\n'
-                    '  "conclusion": "string"\n'
+                    '  "conclusion": "string (non-empty)"\n'
                     '}}\n'
                 ),
                 ('human', 'TOPIC: {topic}\n\nDOCUMENTS: {docs}')
@@ -77,7 +84,7 @@ class ExtractorAgent(BaseAgent):
         self.logger.info(f'Starting extraction for topic: "{topic}"')
 
         docs = state.get('wikipedia_docs', '') + state.get('arxiv_docs', '')
-        self.logger.info('Combined the documents.')
+        self.logger.info('Combined the Wikipedia and arXiv documents.')
 
         try:
             response = self.llm.invoke(
