@@ -103,8 +103,8 @@ class AssemblerAgent:
 
     def add_references(self, sources: list[dict]) -> None:
         references = []
-
         self.logger.info('Creating IEEE / Vancouver styled references...')
+
         for source in sources:
             authors = self._format_authors(source['authors'])
             reference = (
@@ -115,18 +115,51 @@ class AssemblerAgent:
                 f"Available: [{source['url']}]({source['url']})"
             )
             references.append(reference)
+            self.logger.info(f'Created reference for source ID: {source['id']}')
 
         self.pdf.add_section(Section(f'## References\n\n{"\n\n".join(references)}'))
         self.logger.info('Added references.')
 
 
-    def add_appendix_a(self, knowledge: dict) -> None:
-        ...
+    def add_appendix_a(self, topics: dict) -> None:
+        appendix = []
+        self.logger.info('Creating Appendix A: Key points of Report...')
+
+        for index, topic in enumerate(topics, start= 1):
+            heading = f'{index}. **{topic['title']}:**\n\t- '
+            summary = '\n\t- '.join(b for b in topic['summary_points'])
+            self.logger.info(f'Extracted main summary of topic {topic['title']}.')
+
+            subtopics = []
+            for index, subtopic in enumerate(topic['subtopics'], start= 1):
+                bullets = '\n\t- '.join(b for b in subtopic['summary_points'])
+                subtopics.append('\n\t- ' + bullets)
+                self.logger.info(f'Extracted summary of subtopic {index}.')
+
+            subtopic_bullets = '\n'.join(subtopics)
+
+            appendix.append(heading + summary + subtopic_bullets)
+            self.logger.info(f'Combined heading, summary and subtopic summary.')
+
+        self.pdf.add_section(Section(f'## Appendix A: Key points of Report\n\n{"\n".join(appendix)}'))
+        self.logger.info('Added Apendix A.')
+        
+
+    def add_appendix_b(self, news_list: list[dict]) -> None:
+        appendix = []
+        self.logger.info('Creating Appendix B: Recent News...')
+
+        for news in news_list:
+            title = f'- **{news['title']}**'
+            publisher = f'\n\t- {news['publisher']['title']} - Published on {news['published date']}'
+            url = f'\n\t- [For more details click here.]({news['url']})'
+
+            appendix.append(title + publisher + url)
+            self.logger.info(f'Extracted news: {news['title']}')
 
 
-    def add_appendix_b(self, news: list[dict]) -> None:
-        for n in news:
-            ...
+        self.pdf.add_section(Section(f'## Appendix B: Recent News\n\n{"\n".join(appendix)}'))
+        self.logger.info('Added Apendix B.')
 
 
     def save(self, file_name: str) -> None:
@@ -144,6 +177,7 @@ class AssemblerAgent:
         self.add_main_body(state.get('report_parts', []))
         self.add_conclusion(state.get('knowledge')['conclusion'])
         self.add_references(state.get('knowledge')['sources'])
-        self.add_appendix_a(state.get('knowledge'))
+        self.add_appendix_a(state.get('knowledge')['topics'])
+        self.add_appendix_b(state.get('news', []))
 
         self.save(f"{state.get('topic', 'Untitled')}.pdf")

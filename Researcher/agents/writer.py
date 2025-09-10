@@ -18,7 +18,7 @@ class WriterAgent(BaseAgent):
                     'CITATION RULES:\n'
                     '- Use only the provided references.\n'
                     '- Inline citations must appear immediately after the statements they support, in the format [id].\n'
-                    '- If multiple sources support the same statement, include them as [id1][id2].\n'
+                    '- If multiple sources support the same statement, include them as [id1, id2].\n'
                     '- Do not invent or include new references.\n'
 
                     'REWRITING RULES:\n'
