@@ -18,7 +18,7 @@ class WriterAgent(BaseAgent):
                     'CITATION RULES:\n'
                     '- Use only the provided references.\n'
                     '- Inline citations must appear immediately after the statements they support, in the format [id].\n'
-                    '- If multiple sources support the same statement, include them as [id1, id2].\n'
+                    '- If multiple sources support the same statement, include them as [id1][id2].\n'
                     '- Do not invent or include new references.\n'
 
                     'REWRITING RULES:\n'
@@ -30,7 +30,7 @@ class WriterAgent(BaseAgent):
                     '- If the criticism requests specific improvements (e.g., expand a section, simplify tone, fix structure):\n'
                     '  - Implement those changes exactly as stated.\n'
                     '- If the criticism says the PREVIOUS RESPONSE is completely off-topic or unusable:\n'
-                    '  - Discard the response entirely and output an empty string ("").\n'
+                    '  - Discard the response entirely and output a new line character (\\n).\n'
                     '- Do not ignore or override the criticism under any circumstances.\n'
                     '- Always preserve the original GUIDELINES for academic tone, structure, citations, and formatting while applying the criticism.\n'
                     
@@ -126,8 +126,9 @@ class WriterAgent(BaseAgent):
         self.logger.info('WriterAgent started.')
         
         if state.get('is_criticized', False):
+            updated_state = self._rewrite_topic(state)
             self.logger.info('WriterAgent finished rewritting.')
-            return self._rewrite_topic(state)
+            return updated_state
 
         report_parts = self._expand_topic(state)        
 

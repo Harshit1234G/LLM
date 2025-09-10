@@ -33,12 +33,12 @@ class ExtractorAgent(BaseAgent):
                     '- Each summary_points list must contain as many items as needed to capture all insights.\n'
                     '- Each topic may contain subtopics with their own summaries.\n'
                     '- Include references for every topic/subtopic by linking to source IDs.\n'
+                    '- Add an abstract of around 150-300 words which summarizes the purpose, methods, key findings, and conclusions.'
                     '- Finally add a conclusion, don\'t ask any follow-up question.\n'
 
                     'JSON SCHEMA:\n'
                     '{{\n'
                     '  "topic": "string (non-empty)",\n'
-                    '  "introduction": "string (non-empty)",\n'
                     '  "sources": [\n'
                     '    {{\n'
                     '      "id": "integer (unique, required)",\n'
@@ -64,6 +64,7 @@ class ExtractorAgent(BaseAgent):
                     '      "references": ["integer (must match a valid source id)", "... (at least 1 required)"]\n'
                     '    }}\n'
                     '  ],\n'
+                    '  "abstract": "string (non-empty)",\n'
                     '  "conclusion": "string (non-empty)"\n'
                     '}}\n'
                 ),
