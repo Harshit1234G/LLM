@@ -64,10 +64,76 @@ class AssemblerAgent:
         self.logger.info('Added main body.')
 
 
+    def add_conclusion(self, conclusion: str) -> None:
+        self.pdf.add_section(
+            Section(f'## Conclusion\n\n{conclusion}'),
+            self.css
+        )
+        self.logger.info('Added conclusion.')
+
+
+    @staticmethod
+    def _format_authors(authors: list[str]) -> str:
+        if not authors:
+            return ''
+
+        formatted = []
+        for name in authors:
+            parts = name.split()
+
+            if len(parts) == 1:
+                formatted.append(parts[0])
+
+            elif 'wikipedia' in name.lower():
+                formatted.append(name)
+
+            else:
+                initials = ' '.join([p[0] + '.' for p in parts[:-1]])
+                formatted.append(f'{initials} {parts[-1]}')
+
+        if len(formatted) == 1:
+            return formatted[0]
+        
+        elif len(formatted) == 2:
+            return f'{formatted[0]} and {formatted[1]}'
+        
+        else:
+            return ', '.join(formatted[:-1]) + f', and {formatted[-1]}'
+        
+
+    def add_references(self, sources: list[dict]) -> None:
+        references = []
+
+        self.logger.info('Creating IEEE / Vancouver styled references...')
+        for source in sources:
+            authors = self._format_authors(source['authors'])
+            reference = (
+                f"[{source['id']}] "
+                f"{authors}, "
+                f"\"{source['title']}\", "
+                f"{source['source']}, [Online]. "
+                f"Available: [{source['url']}]({source['url']})"
+            )
+            references.append(reference)
+
+        self.pdf.add_section(Section(f'## References\n\n{"\n\n".join(references)}'))
+        self.logger.info('Added references.')
+
+
+    def add_appendix_a(self, knowledge: dict) -> None:
+        ...
+
+
+    def add_appendix_b(self, news: list[dict]) -> None:
+        for n in news:
+            ...
+
+
     def save(self, file_name: str) -> None:
         os.makedirs('results', exist_ok= True)
         path = os.path.join('results', file_name)
         self.pdf.save(path)
+        self.logger.info(f'Saved the final report at: {path}')
 
 
     def create_final_pdf(self, state: ResearchState) -> None:
@@ -76,5 +142,8 @@ class AssemblerAgent:
         self.add_abstract(state.get('knowledge')['abstract'])
         self.add_methodology()
         self.add_main_body(state.get('report_parts', []))
+        self.add_conclusion(state.get('knowledge')['conclusion'])
+        self.add_references(state.get('knowledge')['sources'])
+        self.add_appendix_a(state.get('knowledge'))
 
         self.save(f"{state.get('topic', 'Untitled')}.pdf")
