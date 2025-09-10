@@ -131,7 +131,7 @@ class AssemblerAgent:
             self.logger.info(f'Extracted main summary of topic {topic['title']}.')
 
             subtopics = []
-            for index, subtopic in enumerate(topic['subtopics'], start= 1):
+            for index, subtopic in enumerate(topic.get('subtopics', []), start= 1):
                 bullets = '\n\t- '.join(b for b in subtopic['summary_points'])
                 subtopics.append('\n\t- ' + bullets)
                 self.logger.info(f'Extracted summary of subtopic {index}.')

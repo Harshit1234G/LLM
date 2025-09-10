@@ -88,6 +88,7 @@ class ExtractorAgent(BaseAgent):
         self.logger.info('Combined the Wikipedia and arXiv documents.')
 
         try:
+            self.logger.info('Extracting...')
             response = self.llm.invoke(
                 self.instructions.format_messages(topic= topic, docs= docs)
             ).content.strip()
