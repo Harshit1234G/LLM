@@ -1,0 +1,31 @@
+## Methodology
+
+This research report was generated using an **Agentic AI pipeline** designed to simulate the process of academic research, writing, and review. The methodology combines automated information retrieval, structured extraction, natural language generation, and iterative critique to ensure reliability and coherence. The pipeline consists of the following components:
+
+1. **Searcher Agent**
+
+   * Retrieves relevant Wikipedia articles, arXiv research papers, and recent news using specialized tools.
+   * Ensures coverage of both academic and practical sources within a defined time period.
+
+2. **Extractor Agent**
+
+   * Processes the raw sources and converts them into a structured **knowledge base (JSON format)**.
+   * Summarizes each topic and subtopic into concise bullet points with references.
+
+3. **Writer Agent**
+
+   * Expands the structured knowledge into detailed, human-readable sections.
+   * Produces coherent paragraphs while maintaining alignment with the knowledge base.
+
+4. **Critic Agent**
+
+   * Reviews the Writer's output against the knowledge base.
+   * Detects hallucinations, unsupported claims, or factual drift.
+   * Provides corrective feedback or validates correctness.
+
+5. **Assembler Agent**
+
+   * Integrates all validated sections into a unified document.
+   * Produces the final **PDF report** with a Title page, abstract, table of contents, Main body, conclusion, references, appendix, and consistent styling.
+
+This layered methodology ensures that the generated report is **factually grounded, logically structured, and stylistically coherent**, while also being transparent about its AI-assisted origin.

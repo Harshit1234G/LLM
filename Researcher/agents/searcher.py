@@ -70,6 +70,7 @@ class SearcherAgent(BaseAgent):
                     state['arxiv_docs'] = arxiv_tool(topic)
 
             state['news'] = google_news_tool(topic)
+            self.logger.info(f'Retrieved recent news on topic: {topic}' if state['news'] != [] else f'No recent news on topic: {topic}')
 
         except Exception as e:
             self.logger.exception(f'Error while retrieving documents: {e}')
