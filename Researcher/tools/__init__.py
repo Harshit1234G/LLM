@@ -1,4 +1,4 @@
 from .api_wrappers import wiki_tool, arxiv_tool
+from .news import google_news_tool
 
-api_tools = [wiki_tool, arxiv_tool]
-__all__ = [api_tools, wiki_tool, arxiv_tool]
+__all__ = [wiki_tool, arxiv_tool, google_news_tool]

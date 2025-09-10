@@ -12,6 +12,7 @@ class ResearchState(TypedDict):
     source: str
     wikipedia_docs: str
     arxiv_docs: str
+    news: list[dict]
     knowledge: dict[str, Any]
     report_parts: list[str]
     criticism: dict[int, str]

@@ -1,6 +1,6 @@
 from langchain_core.prompts import ChatPromptTemplate
 
-from tools import wiki_tool, arxiv_tool
+from tools import wiki_tool, arxiv_tool, google_news_tool
 from agents import BaseAgent
 from utils import get_logger
 
@@ -68,6 +68,8 @@ class SearcherAgent(BaseAgent):
                 case 'both':
                     state['wikipedia_docs'] = wiki_tool(topic)
                     state['arxiv_docs'] = arxiv_tool(topic)
+
+            state['news'] = google_news_tool(topic)
 
         except Exception as e:
             self.logger.exception(f'Error while retrieving documents: {e}')

@@ -335,5 +335,207 @@
     "5": "PASS",
     "6": "PASS"
   },
-  "is_criticized": true
+  "is_criticized": true,
+  "news": [
+    {
+      "title": "Fractional computing - Nature",
+      "description": "Fractional computing  Nature",
+      "published date": "Mon, 11 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE41RHEyX1hkZTh0TWhNRXpZS0pkVTAxR01Eci15YVJNNUlwX2ppa1RXN2hyXzN2MTlwQld4aDZBSnVZTjZ0T1Y2azVCLUlCYm1VZTBRUDhfRFhPZzJXNTRj?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.nature.com",
+        "title": "Nature"
+      }
+    },
+    {
+      "title": "Controversial Quantum-Computing Paper Gets a Hefty Correction - Scientific American",
+      "description": "Controversial Quantum-Computing Paper Gets a Hefty Correction  Scientific American",
+      "published date": "Thu, 21 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPSW96UWVEdWFvaWFsNWl4VUhVYi1NUVlxcXlEdkVjaVl0Q3YydEh0NVBia09KclpwWGMyQi1ld1lXSkFOdEdLWENRSkxNbmtfYWhldFVyUUJuejZuOWZaLWNRQkVrYjlLb2dZMVQyR0daUi1DN05TbDJRZkZBeVFmUHBjVFFpQ0praV92LUVDa2dDWDF0YS1oanFHMk1TY2dVeW5VMFk1eVE?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.scientificamerican.com",
+        "title": "Scientific American"
+      }
+    },
+    {
+      "title": "New MIT report captures state of quantum computing - MIT Sloan",
+      "description": "New MIT report captures state of quantum computing  MIT Sloan",
+      "published date": "Tue, 19 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOR2tKUjRyRkUtTklQSlR1ajI2MFRUQUNhNlJ3MURQaEk4bmlkc2IzRWVDWEdpMnd6cm42TU9GSVozMDlQUGlBYktqTkFQdlZpQmRaU1AyeEtWWEQ3SWR2U3JQc2pWeHdWcFNTbFp1ZlBiR1B1N2JlWUtTWFo4ZXNCOTE5ekFnenpYUEhJaGFXeFNicEhwNUZuUg?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://mitsloan.mit.edu",
+        "title": "MIT Sloan"
+      }
+    },
+    {
+      "title": "Scientists Unlock Quantum Computing Power by Entangling Vibrations in a Single Atom - SciTechDaily",
+      "description": "Scientists Unlock Quantum Computing Power by Entangling Vibrations in a Single Atom  SciTechDaily",
+      "published date": "Sun, 24 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMEhLT3lwSEIxUzRDSUhyX3pnYmZsNzZZWkVsaWhQakt6ZERlWHFFQk5pZlNRLU1SNWo1UElSOF9teC00SWF0WHEycGR3Tlpjd1NxWC1LMTBjR25ZaWM1dEJpTllOTWlkZEhyZGZDb3hTSHhQdy1nenFaMUc4NjVJRXI5czAwX2NCbWphdjdQZmwtdTZ3NXNza3E1S2I3Y0diOGs4bzhTQnhiR3QySHc?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://scitechdaily.com",
+        "title": "SciTechDaily"
+      }
+    },
+    {
+      "title": "Researchers Achieve Quantum Computing Milestone, Realizing Certified Randomness - College of Natural Sciences",
+      "description": "Researchers Achieve Quantum Computing Milestone, Realizing Certified Randomness  College of Natural Sciences",
+      "published date": "Wed, 26 Mar 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPMTFfcGx0aUFBRUlTS1Q3MG5RMzJZSGEyd1RSQ1RtY2lJR0MwQ1I0bjJFTEhVQjZEQU5fWmUxalQtOXpqd3g1NXN6Q09wR3NQaE9qUTRmQzFHdHl3QVNwSWpXXy02d1N6QkU5Mm1WNDMydEVLYWdPS2NGbjRPbk1JTVozSVJWNkYwdVZMSGdLR21BZWJzZ041cHNyOFhLaXNTcHY5U1YzLUpSYnNnY1ota1l0clc0dw?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://cns.utexas.edu",
+        "title": "College of Natural Sciences"
+      }
+    },
+    {
+      "title": "Predicted quasiparticles called ‘neglectons’ hold promise for robust, universal quantum computing - Physics World",
+      "description": "Predicted quasiparticles called ‘neglectons’ hold promise for robust, universal quantum computing  Physics World",
+      "published date": "Thu, 14 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPU2l6YUdMbktqR21oZkthZ2o5MlhKay0yaTlmaEZFcDF2TDNtYnBsNkV1MUY5U1BrbmZWSmlIU1hiTFZseVBvR2FaQnVkVnptXzA0Tk9haEVWTEs5VGJSVlZPdXpBRUpTS1JuQkp2WUZNcXpIcTMwbFdLcWVCQ0FSSER4OWc5OUVmYkZDMjgwU2R4eTJFVjRfSHd2TkRwc2VyTFk3MlFTNkxCSFF6VEcyMUhRaG90SFRxRjM3Y1o3MA?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://physicsworld.com",
+        "title": "Physics World"
+      }
+    },
+    {
+      "title": "The race to perfect the quantum computer is on, and UC is helping America hold its lead - University of California",
+      "description": "The race to perfect the quantum computer is on, and UC is helping America hold its lead  University of California",
+      "published date": "Wed, 14 May 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVkxDUmhpOG9VbDZlOUtpZ2ptQ3ExbGE0ck1PNndwbTBLMzczT0xJbnZqaGs2N3NSNXVMLVk5Y3E0T2g2cDRmd1lMeS11RXhFVnNWSDRzemt4LTE2RlpaZVNUalh0bExCaHZVYVpIM1Y3MXdrQlJXYkcwVkYxOFNkUmNRd0lUX0w3c1luVmYtNlBCNkZ2ak5CMElwSnNfaUdQNzVCQVJfQ2pqdUg4TlNB?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.universityofcalifornia.edu",
+        "title": "University of California"
+      }
+    },
+    {
+      "title": "‘Neglected’ particles that could rescue quantum computing - USC Today",
+      "description": "‘Neglected’ particles that could rescue quantum computing  USC Today",
+      "published date": "Tue, 05 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSXVIemE2YWl0dmR4YTQyUXBCZ2NSSU1QQkdaYTZ2cE1ubVp2VEVfdFV0SVlHeU9CQUNoWGE2ZjNuOGdmX2tleXFuZzVQVEh6cE5lQUFDYUFxS3h0T3JrZmIyQ0NNR2lZcFVMcnNaanJzU3pqdlh1NWhHX25MWnQ5R1Z1OGIxQjNfWEZTWkxyOW9WRHhqcjZhTXU1dGNXZw?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://today.usc.edu",
+        "title": "USC Today"
+      }
+    },
+    {
+      "title": "Quantum Breakthroughs: NIST & SQMS Lead the Way - National Institute of Standards and Technology (.gov)",
+      "description": "Quantum Breakthroughs: NIST & SQMS Lead the Way  National Institute of Standards and Technology (.gov)",
+      "published date": "Fri, 04 Apr 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNkJUTUpuTUNWa3hJWkpobFlSVUNwM0c5a09KRkRRb3dsNThSWkJINTJHeTBMbUdWNVZJVGs3bEQ3a0U5NlJuaEZGU2lRYkJvbXJ4aHBqT21idll0Wkx0N3BuYXJrdEdTZ204YU11VDRaU1R1emZGbUpXdVpPOHVCajFVNXk0RnZhd3pnU19XRQ?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.nist.gov",
+        "title": "National Institute of Standards and Technology (.gov)"
+      }
+    },
+    {
+      "title": "Quantum Computing Explained: A Must-Read for Executives - Gartner",
+      "description": "Quantum Computing Explained: A Must-Read for Executives  Gartner",
+      "published date": "Fri, 20 Sep 2024 04:02:19 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9NVl9iX0w3MTMwaDdhWlczZnpLWUVXMUQ4TXZyZml3Y2ZueWNXMHRuSXphZFJjQ3Zqc1UzLWZJODJYdWhqRndCeTY1elllMkVZN2Z4YmRxRFQtYl9CcHZzbGk5Yw?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.gartner.com",
+        "title": "Gartner"
+      }
+    },
+    {
+      "title": "The world should prepare for the looming quantum era - Financial Times",
+      "description": "The world should prepare for the looming quantum era  Financial Times",
+      "published date": "Thu, 21 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xQU1PcUZ5SFNLaExpdm40bHhnQTFfZzdaMkp5TUFaWmZfbEozYWNhUS1XYjE2U1AyNjZ3Q2puOHo4Und4SnlBS3dJMkl3MUh2aEgyZlZIVzdaUERPM0ZYUmlTcUlIMUJDR2NUdFFpNTE?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.ft.com",
+        "title": "Financial Times"
+      }
+    },
+    {
+      "title": "Universal distributed blind quantum computing with solid-state qubits - Science | AAAS",
+      "description": "Universal distributed blind quantum computing with solid-state qubits  Science | AAAS",
+      "published date": "Thu, 01 May 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBydGhmanRtcFZCWXJhUkNsdTRqYmVwODRpR3I3QlVyejFyclJrZW9oN2lkRXRmeFJ5NlFsd0hXaTNpcDh3T1FBMEFFLS1ieWY3b0U2bEZDd3VQNDFLcnhXMA?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.science.org",
+        "title": "Science | AAAS"
+      }
+    },
+    {
+      "title": "Topological quantum processor marks breakthrough in computing - UC Santa Barbara",
+      "description": "Topological quantum processor marks breakthrough in computing  UC Santa Barbara",
+      "published date": "Thu, 20 Feb 2025 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ1Fad3g2ZGx1ZVpWUUljZzFmUzVtcm9HeWFBNnZtNUxoVTdFTV93WnA0Q0t4QnpiSmQyc1VWUld1dy1YcmhmUVlVX09Da3BaNEpfQ0FoeWdWclZ3ZV9MT05GYU5KbGVsZVl2MVpwR1BPWU1KVDI4clZYaFBGVVFHb2NSYXAxQl9pMXFJRjZaRzhWYWQxVV9V?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://news.ucsb.edu",
+        "title": "UC Santa Barbara"
+      }
+    },
+    {
+      "title": "The Next Big Cyber Threat Could Come from Quantum Computers… Is the Government Ready? - U.S. Government Accountability Office (GAO) (.gov)",
+      "description": "The Next Big Cyber Threat Could Come from Quantum Computers… Is the Government Ready?  U.S. Government Accountability Office (GAO) (.gov)",
+      "published date": "Wed, 22 Jan 2025 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY0xQbnpCMktFbVF4QmNoeGQxSGhZXzMzblBwam15VFo1cWdCeWdBRUlzT3dCNmRrSmU0NU1GRmdwY3FqYWZfSUNrNzN3amJCV1Q0Vm5JeVNBbWRGV2NoeTRydFhTQXViT2NTSFljSWxIU3Q0OHdKcGEzQXh1aFVCWmxuV2R4eU1nTldMS0JMLUw5emtPYjA4?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.gao.gov",
+        "title": "U.S. Government Accountability Office (GAO) (.gov)"
+      }
+    },
+    {
+      "title": "Can Quantum Computers Handle Energy's Hardest Problems? - NREL (.gov)",
+      "description": "Can Quantum Computers Handle Energy's Hardest Problems?  NREL (.gov)",
+      "published date": "Thu, 01 May 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOV2E1UmtfVEw2R2VnaGhERGlfajBLdk81X0dFejAzczdhTG1RZHhjUTg2OFZkdS1vM1dNTWxhd1daWGh2VHluRzUtN0VPRnlTZ0hJZjlzUy0zWF9RUGlmREs4bEpUM2Uyb2lVWW50UFZ2VXdsLVJWR2RRYVAyQ3ZRbXgxU0tjcFh6bVhrRW9nMEJ5TUlxWUIxb0k5U0E0Q28?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.nrel.gov",
+        "title": "NREL (.gov)"
+      }
+    },
+    {
+      "title": "Why Is Sumitomo Corporation Taking on Quantum Computing? Pioneering Real-World Applications at the Forefront of Social Implementation - sumitomocorp.com",
+      "description": "Why Is Sumitomo Corporation Taking on Quantum Computing? Pioneering Real-World Applications at the Forefront of Social Implementation  sumitomocorp.com",
+      "published date": "Tue, 15 Jul 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE93VDJhSnhrYmNxdVRpYXlnT3ExbEw3WjB6cnhZTldCbEJHNGVPUy0xYTcwV081V3I2MHVBa1RlSVJUSUNkNUxiVjh2T2pFNVhXTTJadVNsdGtfbDNsalhuclhBVlF1dw?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.sumitomocorp.com",
+        "title": "sumitomocorp.com"
+      }
+    },
+    {
+      "title": "Quantum computing could be commercial real estate’s next big tailwind - CNBC",
+      "description": "Quantum computing could be commercial real estate’s next big tailwind  CNBC",
+      "published date": "Tue, 12 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWHV4bE9za2RNVzdfX29fbXNkVmJhX1FkeEtLdDlyLVYwbm11anh6dzBYcnl2X2tfX3hBeWZtZF9Bazl6Y2JJSFZXTG83UURwWUlDOEo4TXc3S1YzckV0SEJkbExFblFtTE41X2k2LXQ4aXdMQmZnUDVSNl9ZQW44UWtsZzFtdnlaU2hfOXA2NNIBlAFBVV95cUxPZFV6R05iOFB3Zm5oVHc4VlY3ZGFtTm9jSmVNU2R0ZWwxcFNnU2JDbVF2akd0ZXd0aWx6ZnVxZnhBSko3VXpTQ3g4S2pkcDVoajZyTjgwZ20xWjZ1V2dBWGp5b0ZfcVNINmcxMUxETnJQLTYwUi1PM3dESjVZUnFUbnR1S08xZXF6bnI0TzVPRWxITzZ2?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.cnbc.com",
+        "title": "CNBC"
+      }
+    },
+    {
+      "title": "Is Your Quantum Computer Faking It? Physicists Unveil a “Quantum Lie Detector” - SciTechDaily",
+      "description": "Is Your Quantum Computer Faking It? Physicists Unveil a “Quantum Lie Detector”  SciTechDaily",
+      "published date": "Wed, 13 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONGFlQUk2bVRab2V6TmtyRVVCMERUNGVUSWRydmNoOHRKQUl4TXVRYnlrSnBseXlGVlNDLVgtTldqUUVZWEtJRkFybUVfZTBFbWJlNmZvTXRRbk41OGlmdXZKQWxNMzExZ2FKVnhGNU5SSzJldnRsSm5VLTl3Q1NRZThPS3dpSUp4Wk1PMTNGTHRFbWNBNVFlV2RZOUZSQjdLcDZN?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://scitechdaily.com",
+        "title": "SciTechDaily"
+      }
+    },
+    {
+      "title": "Universal logical quantum photonic neural network processor via cavity-assisted interactions - Nature",
+      "description": "Universal logical quantum photonic neural network processor via cavity-assisted interactions  Nature",
+      "published date": "Wed, 20 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYRzVDSnRvRWlDaHloXzg3YUJGVVJyR3h1bUFkZ0Y3TUw1NFpZVEtRakl6aHBFcFptdkMtSEMzSDM2RmgwcEx2U24xc2tjdW1LQ3B2aVFYaGxKRmhCTVlR?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.nature.com",
+        "title": "Nature"
+      }
+    },
+    {
+      "title": "A manufacturable platform for photonic quantum computing - Nature",
+      "description": "A manufacturable platform for photonic quantum computing  Nature",
+      "published date": "Wed, 26 Feb 2025 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9HTE0tZzAzdGMyRE5yYlRkUFJTVVlkUFpUdzVxWWFFVXdwSUxyYUN6eXI3blhTRmVCOHRBajM3eWRleG5xNEctNkNxMTUzSzAydXQybDlzY2Q5YTJIUkw4?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.nature.com",
+        "title": "Nature"
+      }
+    }
+  ]
 }
