@@ -7,6 +7,8 @@ from utils import get_logger
 
 class ExtractorAgent(BaseAgent):
     def __init__(self):
+        """Processes the raw sources and converts them into a structured **knowledge base (JSON format)**. Summarizes each topic and subtopic into concise bullet points with references, also add sources, abstract and conclusion.
+        """
         self.logger = get_logger(self.__class__.__name__)
 
         prompt = ChatPromptTemplate(
@@ -81,6 +83,14 @@ class ExtractorAgent(BaseAgent):
 
 
     def run(self, state):
+        """Processes the raw sources and converts them into a structured **knowledge base (JSON format)**.
+
+        Args:
+            state (ResearchState): Current state of the graph.
+
+        Returns:
+            ResearchState: Updated state with `knowledge`.
+        """
         topic = state.get('topic')
         self.logger.info(f'Starting extraction for topic: "{topic}"')
 
@@ -94,6 +104,7 @@ class ExtractorAgent(BaseAgent):
             ).content.strip()
             self.logger.info('LLM response received.')
 
+            # parsing json
             knowledge = json.loads(response)
             self.logger.info(f'Successfully parsed knowledge JSON for topic "{topic}"')
 

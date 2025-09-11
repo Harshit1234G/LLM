@@ -7,9 +7,13 @@ from utils import get_logger
 
 class SearcherAgent(BaseAgent):
     def __init__(self):
+        """
+        Retrieves relevant Wikipedia articles, arXiv research papers, and recent news using specialized tools.
+        """
         self.logger = get_logger(self.__class__.__name__)
 
         prompt = ChatPromptTemplate(
+            # for messages I'm using implicit string concatenation, which is used for every prompt in the program
             messages= [
                 (
                     "system", 
@@ -36,6 +40,14 @@ class SearcherAgent(BaseAgent):
 
 
     def __decide_source(self, topic: str) -> str:
+        """Decides which source to use for data retrieval: Wikipedia, arXiv, or Both.
+
+        Args:
+            topic (str): Topic of report.
+
+        Returns:
+            str: Decided source: Wikipedia -> "wiki", arXiv -> "arxiv", Both -> "both"
+        """
         source = self.llm.invoke(
             self.instructions.format_messages(topic= topic)
         ).content.strip().lower()
@@ -45,6 +57,17 @@ class SearcherAgent(BaseAgent):
 
 
     def run(self, state):
+        """Retrieves relevant Wikipedia articles, arXiv research papers, and recent news using specialized tools.
+
+        Args:
+            state (ResearchState): Current state of the graph.
+
+        Raises:
+            ValueError: If state doesn't contain the value for `topic`.
+
+        Returns:
+            ResearchState: Updated state with `source`, `wikipedia_docs`, `arxiv_docs` and `news`
+        """
         self.logger.info('SearcherAgent started.')
 
         topic = state.get('topic', None)
@@ -56,6 +79,7 @@ class SearcherAgent(BaseAgent):
             source = self.__decide_source(topic)
             state['source'] = source
 
+            # retrieving data based on the decided source
             match source:
                 case 'wiki':
                     state['wikipedia_docs'] = wiki_tool(topic)
@@ -69,6 +93,7 @@ class SearcherAgent(BaseAgent):
                     state['wikipedia_docs'] = wiki_tool(topic)
                     state['arxiv_docs'] = arxiv_tool(topic)
 
+            # retrieving relevant news
             state['news'] = google_news_tool(topic)
             self.logger.info(f'Retrieved recent news on topic: {topic}' if state['news'] != [] else f'No recent news on topic: {topic}')
 
@@ -76,6 +101,5 @@ class SearcherAgent(BaseAgent):
             self.logger.exception(f'Error while retrieving documents: {e}')
 
         self.logger.info('Successfully loaded the documents.')
-
         return state
                 

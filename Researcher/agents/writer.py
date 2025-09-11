@@ -6,6 +6,8 @@ from utils import get_logger
 
 class WriterAgent(BaseAgent):
     def __init__(self):
+        """Expands the structured knowledge into detailed, human-readable sections. Produces coherent paragraphs while maintaining alignment with the knowledge base.
+        """
         self.logger = get_logger(self.__class__.__name__)
         
         prompt = ChatPromptTemplate(
@@ -63,6 +65,17 @@ class WriterAgent(BaseAgent):
 
 
     def _expand_topic(self, state: ResearchState) -> list[str]:
+        """Takes `knowledge` from the `state` and explains them one-by-one based on the topic, subtopics, summary points and references.
+
+        Args:
+            state (ResearchState): Current state of the graph.
+
+        Raises:
+            ValueError: If no value for `knowledge` was provided in the `state`.
+
+        Returns:
+            list[str]: List of topic-wise explanation.
+        """
         knowledge = state.get('knowledge')
 
         if knowledge is None:
@@ -72,6 +85,7 @@ class WriterAgent(BaseAgent):
         report_parts = []
         topics = knowledge.get('topics', [])
 
+        # expanding\explaining topics one-by-one
         for index, topic in enumerate(topics):
             title = topic.get('title', f'Untitled-{index}')
             self.logger.info(f'Expanding topic [{index + 1}]: {title}')
@@ -95,10 +109,19 @@ class WriterAgent(BaseAgent):
     
 
     def _rewrite_topic(self, state: ResearchState) -> ResearchState:
+        """It rewrites the topics if `CriticAgent` has provided any citicism.
+
+        Args:
+            state (ResearchState): Current state of the graph.
+
+        Returns:
+            ResearchState: Updated state with rewritten `report_parts`
+        """
         criticisms = state.get('criticism', {})
         topics = state.get('knowledge', {}).get('topics', [])
 
         for index, critique in criticisms.items():
+            # if critic agent says that the report part passes 
             if critique == 'PASS':
                 self.logger.info(f'Topic [{index + 1}] passed without changes.')
                 continue
@@ -106,6 +129,7 @@ class WriterAgent(BaseAgent):
             title = topics[index].get('title', f'Untitled-{index}')
             self.logger.info(f'Rewriting topic [{index + 1}]: {title}')
 
+            # if critic agent provided any criticism
             try:
                 prompt = self.instructions.format_messages(
                     input_json= topics[index],
@@ -113,6 +137,8 @@ class WriterAgent(BaseAgent):
                     prev_response= state['report_parts'][index]
                 )
                 text = self.llm.invoke(prompt).content.strip()
+
+                # replacing the previous response with new reponse
                 state['report_parts'][index] = text
                 self.logger.info(f'Successfully rewrote topic [{index + 1}]: {title}')
 
@@ -123,13 +149,23 @@ class WriterAgent(BaseAgent):
         
 
     def run(self, state):
+        """Expands the structured knowledge into detailed, human-readable sections. Produces coherent paragraphs while maintaining alignment with the knowledge base.
+
+        Args:
+            state (ResearchState): Current state of the graph.
+
+        Returns:
+            ResearchState: Updated state with `report_parts`.
+        """
         self.logger.info('WriterAgent started.')
         
+        # for rewritting
         if state.get('is_criticized', False):
             updated_state = self._rewrite_topic(state)
             self.logger.info('WriterAgent finished rewritting.')
             return updated_state
 
+        # for expanding
         report_parts = self._expand_topic(state)        
 
         self.logger.info('WriterAgent finished expanding.')

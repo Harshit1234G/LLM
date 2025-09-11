@@ -23,14 +23,17 @@ if __name__ == '__main__':
     print('   - You can cancel anytime with Ctrl+C.\n')
     print('=================================================================\n')
 
+    # loading .env
     if load_dotenv():
         logger.info('.env loaded successfully.')
     else:
         logger.warning('.env not found. You will be prompted for missing keys.')
 
+    # setting these variables
     os.environ['LANGSMITH_TRACING'] = 'true'
     os.environ['LANGSMITH_ENDPOINT'] = 'https://api.smith.langchain.com'
 
+    # checking if these exist, if not ask user
     required_vars = ['OPENAI_API_KEY', 'LANGSMITH_API_KEY', 'LANGSMITH_PROJECT']
     for var in required_vars:
         if not os.environ.get(var):
@@ -39,6 +42,7 @@ if __name__ == '__main__':
 
     logger.info('All required environment variables available. Proceeding...')
 
+    # main flow
     assistant = ResearchAssistant()
     topic = input('\nEnter the topic of research: ').strip()
     if not topic:

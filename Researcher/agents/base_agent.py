@@ -28,6 +28,15 @@ class BaseAgent:
             use_small_model: bool = False,
             **llm_kwargs
         ) -> None:
+        """Base class for creating agents. Initializes basic attributes, selects small or default model, and creates an object of `langchain_openai.ChatOpenAI` based on the given LLM arguments.
+
+        Args:
+            name (str): Name of the agent.
+            instructions (ChatPromptTemplate): Prompt for the LLM.
+            temperature (float): Temperature for the LLM.
+            use_small_model (bool, optional): If True then the agent will use smaller model from the `config/settings.py`. Defaults to False.
+            llm_kwargs: Any other keyword arguments for the LLM.
+        """
         # basic attributes
         self.name = name
         self.instructions = instructions
@@ -43,4 +52,15 @@ class BaseAgent:
 
 
     def run(self, state: ResearchState) -> ResearchState:
+        """Every child class should implement this function. It is used as graph node later.
+
+        Args:
+            state (ResearchState): State for the graph.
+
+        Raises:
+            NotImplementedError: Every child class must implement `run()` function.
+
+        Returns:
+            ResearchState: Child classes should return `ResearchState`.
+        """
         raise NotImplementedError('Subclasses must implement run()')

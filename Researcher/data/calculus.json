@@ -1,0 +1,449 @@
+{
+  "topic": "Calculus",
+  "source": "wiki",
+  "wikipedia_docs": "Index: 1\nTitle: Calculus\nSource: https://en.wikipedia.org/wiki/Calculus\nContent: Calculus is the mathematical study of continuous change, in the same way that geometry is the study of shape, and algebra is the study of generalizations of arithmetic operations.\nOriginally called infinitesimal calculus or \"the calculus of infinitesimals\", it has two major branches, differential calculus and integral calculus. The former concerns instantaneous rates of change, and the slopes of curves, while the latter concerns accumulation of quantities, and areas under or between curves. These two branches are related to each other by the fundamental theorem of calculus. They make use of the fundamental notions of convergence of infinite sequences and infinite series to a well-defined limit. It is the \"mathematical backbone\" for dealing with problems where variables change with time or another reference variable.\nInfinitesimal calculus was formulated separately in the late 17th century by Isaac Newton and Gottfried Wilhelm Leibniz. Later work, including codifying the idea of limits, put these developments on a more solid conceptual footing. The concepts and techniques found in calculus have diverse applications in science, engineering, and other branches of mathematics.\n\n\n== Etymology ==\n\nIn mathematics education, calculus is an abbreviation of both infinitesimal calculus and integral calculus, which denotes courses of elementary mathematical analysis. \nIn Latin, the word calculus means “small pebble”, (the diminutive of calx, meaning \"stone\"), a meaning which still persists in medicine. Because such pebbles were used for counting out distances, tallying votes, and doing abacus arithmetic, the word came to be the Latin word for calculation. In this sense, it was used in English at least as early as 1672, several years before the publications of Leibniz and Newton, who wrote their mathematical texts in Latin.\nIn addition to differential calculus and integral calculus, the term is also used for naming specific methods of computation or theories that imply some sort of computation. Examples of this usage include propositional calculus, Ricci calculus, calculus of variations, lambda calculus, sequent calculus, and process calculus. Furthermore, the term \"calculus\" has variously been applied in ethics and philosophy, for such systems as Bentham's felicific calculus, and the ethical calculus.\n\n\n== History ==\n\nModern calculus was developed in 17th-century Europe by Isaac Newton and Gottfried Wilhelm Leibniz (independently of each other, first publishing around the same time) but elements of it first appeared in ancient Egypt and later Greece, then in China and the Middle East, and still later again in medieval Europe and India.\n\n\n=== Ancient precursors ===\n\n\n==== Egypt ====\nCalculations of volume and area, one goal of integral calculus, can be found in the Egyptian Moscow papyrus (c. 1820 BC), but the formulae are simple instructions, with no indication as to how they were obtained.\n\n\n==== Greece ====\n\nLaying the foundations for integral calculus and foreshadowing the concept of the limit, ancient Greek mathematician Eudoxus of Cnidus (c. 390–337 BC) developed the method of exhaustion to prove the formulas for cone and pyramid volumes.\nDuring the Hellenistic period, this method was further developed by Archimedes (c. 287 – c. 212 BC), who combined it with a concept of the indivisibles—a precursor to infinitesimals—allowing him to solve several problems now treated by integral calculus. In The Method of Mechanical Theorems he describes, for example, calculating the center of gravity of a solid hemisphere, the center of gravity of a frustum of a circular paraboloid, and the area of a region bounded by a parabola and one of its secant lines.\n\n\n==== China ====\nThe method of exhaustion was later discovered independently in China by Liu Hui in the 3rd century AD to find the area of a circle. In the 5th century AD, Zu Gengzhi, son of Zu Chongzhi, established a method that would later be called Cavalieri's principle to find the volume of a sphere.\n\n\n=== Medieval ===\n\n\n==== Middle East ====\nIn the Middle East, Hasan Ibn al-Haytham, Latinized as Alhazen (c. 965 – c. 1040 AD) derived a formula for the sum of fourth powers. He determined the equations to calculate the area enclosed by the curve represented by \n  \n    \n      \n        y\n        =\n        \n          x\n          \n            k\n          \n        \n      \n    \n    {\\displaystyle y=x^{k}}\n  \n (which translates to the integral \n  \n    \n      \n        ∫\n        \n          x\n          \n            k\n          \n        \n        \n        d\n        x\n      \n    \n    {\\displaystyle \\int x^{k}\\,dx}\n  \n in contemporary notation), for any given non-negative integer value of \n  \n    \n      \n        k\n      \n    \n    {\\displaystyle k}\n  \n.He used the results to carry out what would now be called an integration of this function, where the formulae for the sums of integral squares and fourth powers allowed him to calculate the volume of a paraboloid.\n\n\n==== India ====\nBhāskara II (c. 1114–1185) was acquainted with some ideas of differential calculus and suggested that the \"differential coefficient\" vanishes at an extremum value of the function. In his astronomical work, he gave a procedure that looked like a precursor to infinitesimal methods. Namely, if \n  \n    \n      \n        x\n        ≈\n        y\n      \n    \n    {\\displaystyle x\\approx y}\n  \n then \n  \n    \n      \n        sin\n        ⁡\n        (\n        y\n        )\n        −\n        sin\n        ⁡\n        (\n        x\n        )\n        ≈\n        (\n        y\n        −\n        x\n        )\n        cos\n        ⁡\n        (\n        y\n        )\n        .\n      \n    \n    {\\displaystyle \\sin(y)-\\sin(x)\\approx (y-x)\\cos(y).}\n  \n This can be interpreted as the discovery that cosine is the derivative of sine. In the 14th century, Indian mathematicians gave a non-rigorous method, resembling differentiation, applicable to some trigonometric functions. Madhava of Sangamagrama and the Kerala School of Astronomy and Mathematics stated components of calculus. They studied series equivalent to the Maclaurin expansions of ⁠\n  \n    \n      \n        sin\n        ⁡\n        (\n        x\n        )\n      \n    \n    {\\displaystyle \\sin(x)}\n  \n⁠, ⁠\n  \n    \n      \n        cos\n        ⁡\n        (\n        x\n        )\n      \n    \n    {\\displaystyle \\cos(x)}\n  \n⁠, and ⁠\n  \n    \n      \n        arctan\n        ⁡\n        (\n        x\n        )\n      \n    \n    {\\displaystyle \\arctan(x)}\n  \n⁠ more than two hundred years before their introduction in Europe. According to Victor J. Katz they were not able to \"combine many differing ideas under the two unifying themes of the derivative and the integral, show the connection between the two, and turn calculus into the great problem-solving tool we have today\".\n\n\n=== Modern ===\nJohannes Kepler's work Stereometria Doliorum (1615) formed the basis of integral calculus. Kepler developed a method to calculate the area of an ellipse by adding up the lengths of many radii drawn from a focus of the ellipse.\nSignificant work was performed in a treatise, the origin being Kepler's methods, written by Bonaventura Cavalieri, who argued that volumes and areas should be computed as the sums of the volumes and areas of infinitesimally thin cross-sections. The ideas were similar to Archimedes' in The Method, but this treatise is believed to have been lost in the 13th century and was only rediscovered in the early 20th century, and so would have been unknown to Cavalieri. Cavalieri's work was not well respected since his methods could lead to erroneous results, and the infinitesimal quantities he introduced were disreputable at first.\nThe formal study of calculus brought together Cavalieri's infinitesimals with the calculus of finite differences developed in Europe at around the same time. Pierre de Fermat, claiming that he borrowed from Diophantus, introduced the concept of adequality, which represented equality up to an infinitesimal error term. The combination was achieved by John Wallis, Isaac Barrow, and James Gregory, the latter two proving themselves to be predecessors to the second fundamental theorem of calculus around 1670.\nThe product rule and chain rule, the notions of higher derivatives and Taylor series, and of analytic functions were used by Isaac Newton in an idiosyncratic notation which he applied to solve problems of mathematical physics. In his works, Newton rephrased his ideas to suit the mathematical idiom of the time, replacing calculations with infinitesimals by equivalent geometrical arguments which were considered beyond reproach. He used the methods of calculus to solve the problem of planetary motion, the shape of the surface of a rotating fluid, the oblateness of the earth, the motion of a weight sliding on a cycloid, and many other problems discussed in his Principia Mathematica (1687). In other work, he developed series expansions for functions, including fractional and irrational powers, and it was clear that he understood the principles of the Taylor series. He did not publish all these discoveries, and at this time infinitesimal methods were still considered disreputable.\n\nThese ideas were arranged into a true calculus of infinitesimals by Gottfried Wilhelm Leibniz, who was originally accused of plagiarism by Newton. He is now regarded as an independent inventor of and contributor to calculus. His contribution was to provide a clear set of rules for working with infinitesimal quantities, allowing the computation of second and higher derivatives, and providing the product rule and chain rule, in their differential and integral forms. Unlike Newton, Leibniz put painstaking effort into his choices of notation.\nToday, Leibniz and Newton are usually both given credit for independently inventing and developing calculus. Newton was the first to apply calculus to general physics. Leibniz developed much of the notation used in calculus today. The basic insights that both Newton and Leibniz provided led to their development of the laws of differentiation and integration, their emphasis that differentiation and integration are inverse processes, their development of methods for calculating the second and higher derivatives, and their statement of the notion for approximating a polynomial series.\nWhen Newton and Leibniz first published their results, there was great controversy over which mathematician (and therefore which country) deserved credit. Newton derived his results first (later to be published in his Method of Fluxions), but Leibniz published his \"Nova Methodus pro Maximis et Minimis\" first. Newton claimed Leibniz stole ideas from his unpublished notes, which Newton had shared with a few members of the Royal Society. This controversy divided English-speaking mathematicians from continental European mathematicians for many years, to the detriment of English mathematics. A careful examination of the papers of Leibniz and Newton shows that they arrived at their results independently, with Leibniz starting first with integration and Newton with differentiation. It is Leibniz, however, who gave the new discipline its name. Newton called his calculus \"the science of fluxions\", a term that endured in English schools into the 19th century. The first complete treatise on calculus to be written in English and use the Leibniz notation was not published until 1815.\n\nSince the time of Leibniz and Newton, many mathematicians have contributed to the continuing development of calculus. One of the first and most complete works on both infinitesimal and integral calculus was written in 1748 by Maria Gaetana Agnesi.\n\n\n=== Foundations ===\nIn calculus, foundations refers to the rigorous development of the subject from axioms and definitions. In early calculus, the use of infinitesimal quantities was thought unrigorous and was fiercely criticized by several authors, most notably Michel Rolle and Bishop Berkeley. Berkeley famously described infinitesimals as the ghosts of departed quantities in his\n\n---\n\nIndex: 2\nTitle: Lambda calculus\nSource: https://en.wikipedia.org/wiki/Lambda_calculus\nContent: In mathematical logic, the lambda calculus (also written as λ-calculus) is a formal system for expressing computation based on function abstraction and application using variable binding and substitution. Untyped lambda calculus, the topic of this article, is a universal machine, a model of computation that can be used to simulate any Turing machine (and vice versa). It was introduced by the mathematician Alonzo Church in the 1930s as part of his research into the foundations of mathematics. In 1936, Church found a formulation which was logically consistent, and documented it in 1940.\nLambda calculus consists of constructing lambda terms and performing reduction operations on them. A term is defined as any valid lambda calculus expression. In the simplest form of lambda calculus, terms are built using only the following rules:\n\n  \n    \n      \n        x\n      \n    \n    {\\textstyle x}\n  \n: A variable is a character or string representing a parameter.\n\n  \n    \n      \n        (\n        λ\n        x\n        .\n        M\n        )\n      \n    \n    {\\textstyle (\\lambda x.M)}\n  \n: A lambda abstraction is a function definition, taking as input the bound variable \n  \n    \n      \n        x\n      \n    \n    {\\displaystyle x}\n  \n (between the λ and the punctum/dot .) and returning the body \n  \n    \n      \n        M\n      \n    \n    {\\textstyle M}\n  \n.\n\n  \n    \n      \n        (\n        M\n         \n        N\n        )\n      \n    \n    {\\textstyle (M\\ N)}\n  \n: An application, applying a function \n  \n    \n      \n        M\n      \n    \n    {\\textstyle M}\n  \n to an argument \n  \n    \n      \n        N\n      \n    \n    {\\textstyle N}\n  \n. Both \n  \n    \n      \n        M\n      \n    \n    {\\textstyle M}\n  \n and \n  \n    \n      \n        N\n      \n    \n    {\\textstyle N}\n  \n are lambda terms.\nThe reduction operations include:\n\n  \n    \n      \n        (\n        λ\n        x\n        .\n        M\n        [\n        x\n        ]\n        )\n        →\n        (\n        λ\n        y\n        .\n        M\n        [\n        y\n        ]\n        )\n      \n    \n    {\\textstyle (\\lambda x.M[x])\\rightarrow (\\lambda y.M[y])}\n  \n : α-conversion, renaming the bound variables in the expression. Used to avoid name collisions.\n\n  \n    \n      \n        (\n        (\n        λ\n        x\n        .\n        M\n        )\n         \n        N\n        )\n        →\n        (\n        M\n        [\n        x\n        :=\n        N\n        ]\n        )\n      \n    \n    {\\textstyle ((\\lambda x.M)\\ N)\\rightarrow (M[x:=N])}\n  \n : β-reduction, replacing the bound variables with the argument expression in the body of the abstraction.\nIf De Bruijn indexing is used, then α-conversion is no longer required as there will be no name collisions. If repeated application of the reduction steps eventually terminates, then by the Church–Rosser theorem it will produce a β-normal form.\nVariable names are not needed if using a universal lambda function, such as Iota and Jot, which can create any function behavior by calling it on itself in various combinations.\n\n\n== Explanation and applications ==\nLambda calculus is Turing complete, that is, it is a universal model of computation that can be used to simulate any Turing machine. Its namesake, the Greek letter lambda (λ), is used in lambda expressions and lambda terms to denote binding a variable in a function.\nLambda calculus may be untyped or typed. In typed lambda calculus, functions can be applied only if they are capable of accepting the given input's \"type\" of data. Typed lambda calculi are strictly weaker than the untyped lambda calculus, which is the primary subject of this article, in the sense that typed lambda calculi can express less than the untyped calculus can. On the other hand, more things can be proven with typed lambda calculi. For example, in simply typed lambda calculus, it is a theorem that every evaluation strategy terminates for every simply typed lambda-term, whereas evaluation of untyped lambda-terms need not terminate (see below). One reason there are many different typed lambda calculi has been the desire to do more (of what the untyped calculus can do) without giving up on being able to prove strong theorems about the calculus.\nLambda calculus has applications in many different areas in mathematics, philosophy, linguistics, and computer science. Lambda calculus has played an important role in the development of the theory of programming languages. Functional programming languages implement lambda calculus. Lambda calculus is also a current research topic in category theory.\n\n\n== History ==\nLambda calculus was introduced by mathematician Alonzo Church in the 1930s as part of an investigation into the foundations of mathematics. The original system was shown to be logically inconsistent in 1935 when Stephen Kleene and J. B. Rosser developed the Kleene–Rosser paradox.\nSubsequently, in 1936 Church isolated and published just the portion relevant to computation, what is now called the untyped lambda calculus. In 1940, he also introduced a computationally weaker, but logically consistent system, known as the simply typed lambda calculus.\nUntil the 1960s when its relation to programming languages was clarified, the lambda calculus was only a formalism. Thanks to Richard Montague and other linguists' applications in the semantics of natural language, the lambda calculus has begun to enjoy a respectable place in both linguistics and computer science.\n\n\n=== Origin of the λ symbol ===\n\nThere is some uncertainty over the reason for Church's use of the Greek letter lambda (λ) as the notation for function-abstraction in the lambda calculus, perhaps in part due to conflicting explanations by Church himself. According to Cardone and Hindley (2006):\n\nBy the way, why did Church choose the notation \"λ\"? In [an unpublished 1964 letter to Harald Dickson] he stated clearly that it came from the notation \"\n  \n    \n      \n        \n          \n            \n              x\n              ^\n            \n          \n        \n      \n    \n    {\\displaystyle {\\hat {x}}}\n  \n\" used for class-abstraction by Whitehead and Russell, by first modifying \"\n  \n    \n      \n        \n          \n            \n              x\n              ^\n            \n          \n        \n      \n    \n    {\\displaystyle {\\hat {x}}}\n  \n\" to \"\n  \n    \n      \n        ∧\n        x\n      \n    \n    {\\displaystyle \\land x}\n  \n\" to distinguish function-abstraction from class-abstraction, and then changing \"\n  \n    \n      \n        ∧\n      \n    \n    {\\displaystyle \\land }\n  \n\" to \"λ\" for ease of printing.\nThis origin was also reported in [Rosser, 1984, p.338]. On the other hand, in his later years Church told two enquirers that the choice was more accidental: a symbol was needed and λ just happened to be chosen.\n\nDana Scott has also addressed this question in various public lectures.\nScott recounts that he once posed a question about the origin of the lambda symbol to Church's former student and son-in-law John W. Addison Jr., who then wrote his father-in-law a postcard:\n\nDear Professor Church,\nRussell had the iota operator, Hilbert had the epsilon operator. Why did you choose lambda for your operator?\n\nAccording to Scott, Church's entire response consisted of returning the postcard with the following annotation: \"eeny, meeny, miny, moe\".\n\n\n== Informal description ==\n\n\n=== Motivation ===\nComputable functions are a fundamental concept within computer science and mathematics. The lambda calculus provides simple semantics for computation which are useful for formally studying properties of computation. The lambda calculus incorporates two simplifications that make its semantics simple.\nThe first simplification is that the lambda calculus treats functions \"anonymously\"; it does not give them explicit names. For example, the function\n\n  \n    \n      \n        \n          s\n          q\n          u\n          a\n          r\n          e\n          _\n          s\n          u\n          m\n        \n        ⁡\n        (\n        x\n        ,\n        y\n        )\n        =\n        \n          x\n          \n            2\n          \n        \n        +\n        \n          y\n          \n            2\n          \n        \n      \n    \n    {\\displaystyle \\operatorname {square\\_sum} (x,y)=x^{2}+y^{2}}\n  \n\ncan be rewritten in anonymous form as\n\n  \n    \n      \n        (\n        x\n        ,\n        y\n        )\n        ↦\n        \n          x\n          \n            2\n          \n        \n        +\n        \n          y\n          \n            2\n          \n        \n      \n    \n    {\\displaystyle (x,y)\\mapsto x^{2}+y^{2}}\n  \n\n(which is read as \"a tuple of x and y is mapped to \n  \n    \n      \n        \n          x\n          \n            2\n          \n        \n        +\n        \n          y\n          \n            2\n          \n        \n      \n    \n    {\\textstyle x^{2}+y^{2}}\n  \n\"). Similarly, the function\n\n  \n    \n      \n        id\n        ⁡\n        (\n        x\n        )\n        =\n        x\n      \n    \n    {\\displaystyle \\operatorname {id} (x)=x}\n  \n\ncan be rewritten in anonymous form as\n\n  \n    \n      \n        x\n        ↦\n        x\n      \n    \n    {\\displaystyle x\\mapsto x}\n  \n\nwhere the input is simply mapped to itself.\nThe second simplification is that the lambda calculus only uses functions of a single input. An ordinary function that requires two inputs, for instance the \n  \n    \n      \n        \n          s\n          q\n          u\n          a\n          r\n          e\n          _\n          s\n          u\n          m\n        \n      \n    \n    {\\textstyle \\operatorname {square\\_sum} }\n  \n function, can be reworked into an equivalent function that accepts a single input, and as output returns another function, that in turn accepts a single input. For example,\n\n  \n    \n      \n        (\n        x\n        ,\n        y\n        )\n        ↦\n        \n          x\n          \n            2\n          \n        \n        +\n        \n          y\n          \n            2\n          \n        \n      \n    \n    {\\displaystyle (x,y)\\mapsto x^{2}+y^{2}}\n  \n\ncan be reworked into\n\n  \n    \n      \n        x\n        ↦\n        (\n        y\n        ↦\n        \n          x\n          \n            2\n          \n        \n        +\n        \n          y\n          \n            2\n          \n        \n        )\n      \n    \n    {\\displaystyle x\\mapsto (y\\mapsto x^{2}+y^{2})}\n  \n\nThis method, known as currying, transforms a function that takes multiple arguments into a chain of functions each with a single argument.\nFunction application of the \n  \n    \n      \n        \n          s\n          q\n          u\n          a\n          r\n          e\n          _\n          s\n          u\n          m\n        \n      \n    \n    {\\textstyle \\operatorname {square\\_sum} }\n  \n function to the arguments (5, 2), yields at once\n\n  \n    \n      \n        (\n        (\n        x\n        ,\n        y\n        )\n        ↦\n        \n          x\n          \n            2\n          \n        \n        +\n        \n          y\n          \n            2\n          \n        \n        )\n        (\n        5\n        ,\n        2\n        )\n      \n    \n    {\\textstyle ((x,y)\\mapsto x^{2}+y^{2})(5,2)}\n  \n\n  \n    \n      \n        =\n        \n          5\n          \n            2\n          \n        \n        +\n        \n          2\n          \n            2\n          \n        \n      \n    \n    {\\textstyle =5^{2}+2^{2}}\n  \n\n  \n    \n      \n        =\n        29\n      \n    \n    {\\textstyle =29}\n  \n,\nwhereas evaluation of the curried version requires one more step\n\n  \n    \n      \n        \n          \n            (\n          \n        \n        \n          \n            (\n          \n        \n        x\n        ↦\n        (\n        y\n        ↦\n        \n          x\n          \n            2\n          \n        \n        +\n        \n          y\n          \n            2\n          \n        \n        )\n        \n          \n            )\n          \n        \n        (\n        5\n        )\n        \n          \n            )\n          \n        \n        (\n        2\n        )\n      \n    \n    {\\textstyle {\\Bigl (}{\\bigl (}x\\mapsto (y\\mapsto x^{2}+y^{2}){\\bigr )}(5){\\Bigr )}\n\n---\n\nIndex: 3\nTitle: Join-calculus\nSource: https://en.wikipedia.org/wiki/Join-calculus\nContent: The join-calculus is a process calculus developed at INRIA. The join-calculus was developed to provide a formal basis for the design of distributed programming languages, and therefore intentionally avoids communications constructs found in other process calculi, such as rendezvous communications, which are difficult to implement in a distributed setting. Despite this limitation, the join-calculus is as expressive as the full π-calculus. Encodings of the π-calculus in the join-calculus, and vice versa, have been demonstrated.\nThe join-calculus is a member of the π-calculus family of process calculi, and can be considered, at its core, an asynchronous π-calculus with several strong restrictions:\n\nScope restriction, reception, and replicated reception are syntactically merged into a single construct, the definition;\nCommunication occurs only on defined names;\nFor every defined name there is exactly one replicated reception.\nHowever, as a language for programming, the join-calculus offers at least one convenience over the π-calculus — namely the use of multi-way join patterns, the ability to match against messages from multiple channels simultaneously.\n\n\n== Implementations ==\n\n\n=== Languages based on the join-calculus ===\nThe join-calculus programming language is a new language based on the join-calculus process calculus. It is implemented as an interpreter written in OCaml, and supports statically typed distributed programming, transparent remote communication, agent-based mobility, and some failure-detection.\n\nThough not explicitly based on join-calculus, the rule system of CLIPS implements it if every rule deletes its inputs when triggered (retracts the relevant facts when fired).\nMany implementations of the join-calculus were made as extensions of existing programming languages:\n\nJoCaml is a version of OCaml extended with join-calculus primitives\nPolyphonic C# and its successor Cω extend C#\nMC# and Parallel C# extend Polyphonic C#\nJoin Java extends Java\nA Concurrent Basic proposal that uses Join-calculus\nJErlang (the J is for Join, Erjang is Erlang for the JVM)\n\n\n=== Embeddings in other programming languages ===\nThese implementations do not change the underlying programming language but introduce join calculus operations through a custom library or DSL:\n\nThe ScalaJoins and the Chymyst libraries are in Scala\nJoinHs by Einar Karttunen and syallop/Join-Language by Samuel Yallop are DSLs for Join calculus in  Haskell\nJoinads - various implementations of join calculus in F#\nCocoaJoin is an experimental implementation in Objective-C for iOS and Mac OS X\nThe Join Python library in Python 3\nC++ via Boost (for boost from 2009, ca. v. 40, current (Dec '19) is 72).\n\n\n== References ==\n\n\n== External links ==\nINRIA, Join Calculus homepage\nMicrosoft Research, The Join Calculus: a Language for Distributed Mobile Programming\n\n---\n",
+  "arxiv_docs": "",
+  "news": [
+    {
+      "title": "The Calculus of Value - Oaktree Capital Management",
+      "description": "The Calculus of Value  Oaktree Capital Management",
+      "published date": "Thu, 14 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAybmpfSGNTV1V4bU14aW5xbW5nRmhHWms3S29kbnVfbDhQUjRzZ2tHTWRtYkxJQnNmN2U5MXUzRFpyNzdZNHpOc01jTHBfcXVkck82SlZEQ3lyLVVVSzMwNENKclVwZmNvRXZxeDNhLTEwb0k0?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.oaktreecapital.com",
+        "title": "Oaktree Capital Management"
+      }
+    },
+    {
+      "title": "Calculus or Statistics: Does it Matter? - The Thomas B. Fordham Institute",
+      "description": "Calculus or Statistics: Does it Matter?  The Thomas B. Fordham Institute",
+      "published date": "Wed, 23 Apr 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMGFOSm1BMV95U0dKdlZDeG9ReGR6TUdWWkRaY3hvTHBXRmVWaWZBSk45VlN4TGxfTUEyUDdCdUowZTV0SGJ2UFlnNVpfQjBkWjBRTnpfUC1BVUs1V2ZLektHTjBqUC1jYktVSXhGMmRBQUItRGl5MmhpVnlMeHN3WGF0Q1p5NzdTTFlPZw?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://fordhaminstitute.org",
+        "title": "The Thomas B. Fordham Institute"
+      }
+    },
+    {
+      "title": "Is calculus an addiction that college admissions officers can’t shake? - The Hechinger Report",
+      "description": "Is calculus an addiction that college admissions officers can’t shake?  The Hechinger Report",
+      "published date": "Mon, 09 Dec 2024 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPY21ZSXVVQ0tfUk5FaUpMTUtoNnlFd09EeTZFN2lLcjdfQ3d4b2VyS2loRzZwSGE4X1pfbTVxSnBNazFmSUpDcUlrQ2tMamkwUG1WUFl5OXJXa2xWeldjamRMV1JkZklDNVhIc3ZkdXl1WXpDOWg3aFB2eExkU0hET05IeVRjNlFRSzNuODB0NklIdw?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://hechingerreport.org",
+        "title": "The Hechinger Report"
+      }
+    },
+    {
+      "title": "It’s Time to Change the Math Calculus: How the U.S. can Finally get Math Education Right - Learning Policy Institute",
+      "description": "It’s Time to Change the Math Calculus: How the U.S. can Finally get Math Education Right  Learning Policy Institute",
+      "published date": "Sat, 28 Jun 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOTnZpbVFDN1pUVTlNODNnSFNobnBsT1JvSnl1OFZ4dXdBaGJ3VWNreDhjNUhuYzllWWs3UFlUR3NwaV9SVGtZUEZpenhiTURMdkVMS0ZpaWhiN0VnUmR0cEJFLUdDcXEwLWdiRmROdWcxdFJ6cTREVVljeFVaY1lpcUtnT0NGTnU2ZjdTdVlnVlJBU0paNWxGSG0ydV9hdkRNWk4wSEtrbGFTME1JcDY2aUl6SVU?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://learningpolicyinstitute.org",
+        "title": "Learning Policy Institute"
+      }
+    },
+    {
+      "title": "Bridge to Calculus Expands STEM Access in Boston Schools - Northeastern Global News",
+      "description": "Bridge to Calculus Expands STEM Access in Boston Schools  Northeastern Global News",
+      "published date": "Thu, 31 Jul 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQd3VRTU1YZ2RObzhoZ2NqWE1BLUZ0aG5YdmpES1lCVTZWVi1aOTBGcjVIY2lGZDFYR2MzZjl3QlZnZVRmek5EMndXbmdZWDF3eDJWZG9SY1RCMmJXU2NRVVB1d0JtZlg0THk0a0JjbzlwN0pEeEVaZDF4dWpnZDNwU3F6WXU1eGNjVlJOckVsQTFYNkVFWWc?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://news.northeastern.edu",
+        "title": "Northeastern Global News"
+      }
+    },
+    {
+      "title": "Exploring the potential of dental calculus to shed light on past human migrations in Oceania - Nature",
+      "description": "Exploring the potential of dental calculus to shed light on past human migrations in Oceania  Nature",
+      "published date": "Sun, 24 Nov 2024 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8tMlFlMTBNRGV4elJ1dkI0cXBWRWlKbGEwZU9pYTdoU1ZoeTJPaFZCdHhUM2J2Q3FpVlBBZnVONVE3Z1B5OXhmU3J2dVU3T3FfbFBvaE9EU3dUY2F3WkJv?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.nature.com",
+        "title": "Nature"
+      }
+    },
+    {
+      "title": "Top Math Prize Recipient Wedded Algebra and Calculus to Found a New Field - Scientific American",
+      "description": "Top Math Prize Recipient Wedded Algebra and Calculus to Found a New Field  Scientific American",
+      "published date": "Wed, 26 Mar 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPU2dqcWZiRU5mZURPMjBpQy1EbHU4UVNLNkRuUXhXb2NoSEg2MUZIQTVpRTUydlU2aTc3U2dvMkFSd0dWT2dNOU9EV3ZiUFBfVlJnUmI0emlCWGNmMEJXU1NaT3NreGh1cmVlaFhDSWQtOGhYdXcxV1MxM1VpSl9hNkdpOVRoYzFKclBidzZYSlF1Uk9ha2ltRUVCSk1tcGw2UUR4LS1LZmk2cksyTWtOMmplcHJHVEd1?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.scientificamerican.com",
+        "title": "Scientific American"
+      }
+    },
+    {
+      "title": "Is Calculus or Stats More Advantageous for Student Success? It’s Complicated - Education Week",
+      "description": "Is Calculus or Stats More Advantageous for Student Success? It’s Complicated  Education Week",
+      "published date": "Wed, 23 Apr 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTkM1M05IcUV5Q0x3M2o0LXRUdTltaTItY01tcW4tUzNwYXhITmRuWUVaQWg5NFZ3LU1GQ0RXd3dCMjdOSFdoZ3NSSXotS3VldHZkX2RjQkJuQTlLYkl5YjViV2xmMmxRa2J5WWFQYzdQOWN4ckk3RkRQV3kzOWFDMUJPZmI5Nzk2VUVtNDBVMWE4eVdOMkIxSlpNTGhTaXQwbVVMNUNOOU5HVTQwTlNyeWhwVG5BV19aWWFfN2FQdVI?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.edweek.org",
+        "title": "Education Week"
+      }
+    },
+    {
+      "title": "AP calculus or AP statistics? It depends on the student - K-12 Dive",
+      "description": "AP calculus or AP statistics? It depends on the student  K-12 Dive",
+      "published date": "Wed, 14 May 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOeUhWVzFCcDR5Y2EwZmR4cUlOcHJVUGNfTXNlU2ZvamlpQnpLeWJvU1VScHY3TU53alhTSTBqWUtMSXc1c3hTZWhrall4OHBPV2trX0lsU0lIMklTcVZhdUFEekFlM2xHUVRjNmpDanQweVlZdncyb1F1dU8zeHFtV1BQNlVoWWVBdTlfbWFsc3MxMmxKQ3c?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.k12dive.com",
+        "title": "K-12 Dive"
+      }
+    },
+    {
+      "title": "How Keeping 8th Graders from Taking Algebra Can Derail Their Futures in STEM - The 74",
+      "description": "How Keeping 8th Graders from Taking Algebra Can Derail Their Futures in STEM  The 74",
+      "published date": "Sun, 12 Jan 2025 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQbWowZ3pZWWd6LUk3TTg2a2p4SGVSUDg5d2hMYllQT1Y2WDM0aHhTZ29oX25mRGp3REZZVkc5YjhGUE9TSkptaG9wSWdpQzdyd3hTcy00SmtxdklZU2hxbWpRWktMQ1pET29EUWhodG1OWDU1Zk1zcXlwMmlIQjN6R0wzR1VRY0lCNVBWZnpsMFdOTjFVaEN5VFpCbzBIaS1hUU9saDBaSmc4MkoxUWROMEo5bi0?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.the74million.org",
+        "title": "The 74"
+      }
+    },
+    {
+      "title": "Community colleges loosen STEM math placement rules, calming some critics - EdSource",
+      "description": "Community colleges loosen STEM math placement rules, calming some critics  EdSource",
+      "published date": "Fri, 13 Dec 2024 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQ3BhZXg4VUpKdkxKbmZwcG9QcVU2NlpsblM5aS1yY0VjRFpQWmVFWVREcTdDN1NkLVJHVGsxMnZ4NmhSVXV0b2MyUHhmLV9NUE82amRWa20zX3RtWU5qWnNvcFFSdFNpWlpQazVVS21pdEpWRFlHSE9XZ0o3VGNCVFYxWVgyV0F3dFozSXUtSjdPLVVDYVNmbjBrZTFNbkJHLXVGaF84eUPSAbABQVVfeXFMT0FIUklBMHk4anFESkZDMTRMNkVGXzFvUkxJRDRIWDdNNjcxbFQxQWwxVmk3OWdqV0VERUlrdDIwTExSUlJVeklxS1dJSlNpX2ZRWUxIZFktcVJWenJHSTBtOHZzVkx6cVdrV1RreXFTVnRibllBMVk1UTd0NGpSRTExRElhdWpFSnRUU0RnV0hjZnkwOVJPOUcyZkQ2VFFIWU0zel8za2Y0NjFrc1NjSDk?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://edsource.org",
+        "title": "EdSource"
+      }
+    },
+    {
+      "title": "Palo Alto schools staff launch effort to bring multivariable calculus on campus - Palo Alto Online",
+      "description": "Palo Alto schools staff launch effort to bring multivariable calculus on campus  Palo Alto Online",
+      "published date": "Wed, 22 Jan 2025 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeWFiWkZIMUZ1eW9CYUxjaWtFTmgxTi1YRmdFV0lfc1ZEcWwzN0RMdWxBUlZkb1MxVHdDTjd0M2hiNHVBZmNBNENRVmpRWFM4VG1iU04xWE1NMDRvSjBfUmZ2QlJtcU9FNGRURTJiazh0Z1l4d0x2Yk5UenZIbDM0eU9Kelc1eVRxZnVvNUdXYnlKNGpBbkZFQUxoZnZteFJGaU5OMmdzd2pITkhXVnU4YnZWcUJYRTNkTTdROGRkUU5wR2tZMkNOTXhMMkE?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.paloaltoonline.com",
+        "title": "Palo Alto Online"
+      }
+    },
+    {
+      "title": "A New Calculus for Global Prosperity at the MIT Kuo Sharper Center - MIT Sloan",
+      "description": "A New Calculus for Global Prosperity at the MIT Kuo Sharper Center  MIT Sloan",
+      "published date": "Thu, 05 Jun 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNV21kMXRkLXVmYUo0b1pJR1B5UTVqS3ZtVUw5Z0pPckU0X1h3eVFJS2VXUEpnZC1EMFJCcUplMUJxQ1Q2MUpXSjRlb3ZFVkVCUXpaXzlXcHVxX3BjVzhoNWFHQ1BzRnR2TXN6R2drc3JzekpxS0stcGZsb1FIUGs2ME0tMm9pczI0cXBTUVpsWXI?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://mitsloan.mit.edu",
+        "title": "MIT Sloan"
+      }
+    },
+    {
+      "title": "Future Makers Lab Helps Students Apply Calculus to Real-World Challenges - Lehigh University News",
+      "description": "Future Makers Lab Helps Students Apply Calculus to Real-World Challenges  Lehigh University News",
+      "published date": "Wed, 09 Apr 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ3hlUTY4eUd1ak8zWW5hYUlzRzVzeWQtbHJFR19pcFk5QUZVYVU1aEFmd1IyYl93UE1CQUxxV21qVUZ4ejhGYnRkY1VBR0gzb1hTdGxhYU9rakRXSDhFMzEyX2ZEdGZEV09zNm1jdWZFU2hmZW9qczgyRVE3UVdUWU5HaXEybUc1NVowb1RteXdkenRuYmpNZzJ4RW4?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://news.lehigh.edu",
+        "title": "Lehigh University News"
+      }
+    },
+    {
+      "title": "Calculus, statistics, and the capstone course question - The Thomas B. Fordham Institute",
+      "description": "Calculus, statistics, and the capstone course question  The Thomas B. Fordham Institute",
+      "published date": "Thu, 24 Apr 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lZRXhSVDBqWXJJVEMyRjNRelp1SDhDdWxsdmYyaU1qTDBsaDA2STNudzd3RThxN0VTWk9VR3phTmN6RHhrMmM0ZEFYZHNqckMybTJabTRmTmJKOFJmSjlGVzJXdXRPMlJCTnlJb3YtbXo5M1hSS0tvNWFmWDhrVi00T2hrQVp2aXRMeVpGbC13ZU01eHFNUXRaU1NaZw?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://fordhaminstitute.org",
+        "title": "The Thomas B. Fordham Institute"
+      }
+    },
+    {
+      "title": "Does calculus matter? This group says it’s a key to advancing equity - The Hechinger Report",
+      "description": "Does calculus matter? This group says it’s a key to advancing equity  The Hechinger Report",
+      "published date": "Wed, 09 Oct 2024 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVDlsVVJnaGdXb1EzOEswQ2Y2TnRjZG9xVUlPLTV5LVZJcVNjOTNWYkxTUlZQRzc2NjdGRmhhbTNybmRYWEJVdHgxRVFuRS1ia2wzWTNiSWxIaFZkSTN4OVF4RER1S0R2TXlLTnBNVDBtTVR4cjFZN202VVlUeHdpVW1JVlI2U29wbVYwVTBZYlhiSkZCRW5DNDN1eFdKUDZGWS1NYkJLRU83STUtbkI0ZVhMeC1PeldJZUljaENhOEE?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://hechingerreport.org",
+        "title": "The Hechinger Report"
+      }
+    },
+    {
+      "title": "The Calculus of Value - Oaktree Capital Management",
+      "description": "The Calculus of Value  Oaktree Capital Management",
+      "published date": "Thu, 14 Aug 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5qSmphb1VpOHJ2YTBKVkxBOEhTSGpER0JuRF9rWG1XX0RlTmFWWmVzRVRGWGwzUE9RZ1JVYlNCTHNfQXpieFhVRGN1R203Uk1LRVY2QjduNGRpVVJvSWxjTXVVdW5CT0xxOVZBTGpZaDZvQkN1SGwzS2RELTJkUms?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.oaktreecapital.com",
+        "title": "Oaktree Capital Management"
+      }
+    },
+    {
+      "title": "What to know about changes in STEM math placement at California community colleges - EdSource",
+      "description": "What to know about changes in STEM math placement at California community colleges  EdSource",
+      "published date": "Fri, 15 Nov 2024 08:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWE5rMFNnSVUyN3RpdklMaUFsMmh0N042RWNJWlEzbWQzVlkyTUdYc1NrajhvQzJsSjZwT05IUk5vWk9WUjR5bzlRRWdQZW44RkM1LVRIb0hGTllwMk5pTmRMcWhENzBPSTY0d01xMGt5NnJZcFhIQlF0ME5KblRzNkd4dzd2bVE2UVhTUlBsbzJzVXhaMzZNY1NRRkM3aTl1bk02dm9iQS03dFN1QUZFOXdaZWRRQdIBvgFBVV95cUxNbFBIQkJIWjNaejlhN0RCeFBYZGZKcnFMb25BZ1hBQWdnd0xhQVhDbTFvaG9qOXdaR1J6bE5YUnZ3RDJCZnNKYkhCT25hNTItdnV4b1FQdjV4VUhrRkZ5U1ozLVhEWVpPVjhDUW43UDBIUGxYSTRDYUphbkNyWm42VTh3OU5WU2x1TEQxSkpiTENTN0VVRUpSMGhDcnBYd3RBdE5xYi1vcGhiSzdGYV9HaVYxT2swVnVxWlRlTTV3?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://edsource.org",
+        "title": "EdSource"
+      }
+    },
+    {
+      "title": "The Creepy Calculus of Measuring Death Risk - Scientific American",
+      "description": "The Creepy Calculus of Measuring Death Risk  Scientific American",
+      "published date": "Fri, 23 May 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPN1Z4UV9JelhuMWU2T0FxMTdudXdqSGRXcGpuNzVFSk9UOGRNSk5RQk1NVGNUaHdhVG5pSnRVZ1NiTWlONlpzYkRzWXhaNFRycFppaklaMVBPT1c3dkdGZUVtbTg2OHFyQm1BQjZmb29yVVJ4aHpyNEtsdEZpUVFQRDVENmlEVUVKSTYwV1BpQUM?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.scientificamerican.com",
+        "title": "Scientific American"
+      }
+    },
+    {
+      "title": "The Calculus Class That Changed One Sagehen’s Life - Pomona College",
+      "description": "The Calculus Class That Changed One Sagehen’s Life  Pomona College",
+      "published date": "Tue, 24 Jun 2025 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNXhVS21KRVZicmgwQzF5SVR0NHBJYjZWOW1KZk5TMWZKNHhpYm4wT3VWSDVscHAxNXlpYnVQODFDTHlTTHRfMXlTVThOMk5KM3R5NUhIS3BpV0V3S0s1OGY2THNxRmxjY1A1ejVuUktiaXdSVmUxekRjb1ZYUHZMeFJtYjRaUXlBZjZZZW01RURpYk1IM0RxNkE5TzV1M0h5?oc=5&hl=en-IN&gl=IN&ceid=IN:en",
+      "publisher": {
+        "href": "https://www.pomona.edu",
+        "title": "Pomona College"
+      }
+    }
+  ],
+  "knowledge": {
+    "topic": "Calculus",
+    "sources": [
+      {
+        "id": 1,
+        "title": "Calculus",
+        "authors": [
+          "Wikipedia contributors"
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Calculus"
+      },
+      {
+        "id": 2,
+        "title": "Lambda calculus",
+        "authors": [
+          "Wikipedia contributors"
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lambda_calculus"
+      },
+      {
+        "id": 3,
+        "title": "Join-calculus",
+        "authors": [
+          "Wikipedia contributors"
+        ],
+        "source": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Join-calculus"
+      }
+    ],
+    "topics": [
+      {
+        "id": "t1",
+        "title": "Core concepts of classical calculus",
+        "summary_points": [
+          "Calculus is the mathematical study of continuous change, built around two interrelated branches: differential calculus (rates of change, slopes of curves) and integral calculus (accumulation, areas under/between curves).",
+          "The fundamental notions underlying calculus are limits, convergence of infinite sequences and series, and well-defined limiting processes; these permit precise definitions of derivatives and integrals.",
+          "Derivatives represent instantaneous rates of change; derivative operations obey rules such as the product rule, chain rule, and can be iterated to obtain higher derivatives.",
+          "Integrals represent accumulated quantities and can be definite (area/accumulation over an interval) or indefinite (family of antiderivatives); integration techniques reduce accumulation problems to computable forms.",
+          "The Fundamental Theorem of Calculus connects differentiation and integration by showing they are inverse processes (one computes antiderivatives, the other computes net accumulation).",
+          "Power-series expansions (Taylor and Maclaurin series) express many functions as infinite polynomials; series methods are essential for approximate calculation and analysis of convergence."
+        ],
+        "subtopics": [
+          {
+            "id": "t1.1",
+            "title": "Differential calculus",
+            "summary_points": [
+              "Focuses on instantaneous rates of change and slopes of curves; derivative defined as a limit of difference quotients.",
+              "Provides computational rules (product, quotient, chain rules), methods to find extrema (critical points where derivative vanishes or is undefined), and higher derivatives for curvature and motion analysis.",
+              "Widely applied to solve problems in physics (motion, force), engineering (rates, optimization), and economics (marginal analysis)."
+            ],
+            "references": [
+              1
+            ]
+          },
+          {
+            "id": "t1.2",
+            "title": "Integral calculus",
+            "summary_points": [
+              "Concerns accumulation of quantities and geometric measures such as area, volume, and work; classical techniques include Riemann-style summation leading to definite integrals.",
+              "Integration methods include antidifferentiation, substitution, integration by parts and limits of sums (historically the method of exhaustion and infinitesimal slicing).",
+              "Integral calculus solves physical accumulation problems (mass, charge, probability), areas between curves, and volumes of solids of revolution."
+            ],
+            "references": [
+              1
+            ]
+          },
+          {
+            "id": "t1.3",
+            "title": "Fundamental Theorem of Calculus",
+            "summary_points": [
+              "States the deep connection between differentiation and integration: the derivative of an integral (with variable upper limit) recovers the integrand, and the definite integral can be computed via any antiderivative.",
+              "Provides the primary computational bridge allowing evaluation of definite integrals through antiderivatives rather than limits of sums."
+            ],
+            "references": [
+              1
+            ]
+          }
+        ],
+        "references": [
+          1
+        ]
+      },
+      {
+        "id": "t2",
+        "title": "History and development",
+        "summary_points": [
+          "Calculus emerged gradually: ancient and medieval cultures developed precursors (methods of exhaustion, indivisibles, series) culminating in the formal discoveries of Newton and Leibniz in the late 17th century.",
+          "Newton emphasized fluxions (rates) and applied calculus extensively to physics; Leibniz developed notation and systematic rules for infinitesimals—both contributions combined into modern calculus.",
+          "The Newton–Leibniz priority dispute affected the dissemination of methods; later work codified limits and rigorous foundations to address conceptual criticisms of infinitesimals."
+        ],
+        "subtopics": [
+          {
+            "id": "t2.1",
+            "title": "Ancient and classical precursors",
+            "summary_points": [
+              "Egyptian papyri contain procedures for areas and volumes (early integral ideas); Greek mathematicians (Eudoxus, Archimedes) developed the method of exhaustion and used indivisible-like reasoning to compute areas, centers of gravity, and volumes.",
+              "Chinese mathematicians (Liu Hui, Zu Gengzhi) independently discovered exhaustion-like methods and principles akin to Cavalieri's principle for volume computations."
+            ],
+            "references": [
+              1
+            ]
+          },
+          {
+            "id": "t2.2",
+            "title": "Medieval contributions (India and Middle East)",
+            "summary_points": [
+              "Middle Eastern mathematicians (e.g., Alhazen) derived summation formulae and integral-like results for powers, enabling volume calculations for solids like paraboloids.",
+              "Indian scholars (Bhāskara II, Madhava and the Kerala school) developed proto-differential ideas and series expansions (for sin, cos, arctan) anticipating Maclaurin series centuries before European formulation."
+            ],
+            "references": [
+              1
+            ]
+          },
+          {
+            "id": "t2.3",
+            "title": "Modern synthesis (17th–18th centuries)",
+            "summary_points": [
+              "Kepler, Cavalieri, Fermat, Wallis, Barrow and Gregory contributed intermediate developments; Newton and Leibniz independently systematized differentiation and integration and introduced key rules and notation.",
+              "Leibniz popularized notation that persists (d/dx, ∫), while Newton applied calculus broadly in physics; subsequent centuries saw formal expansions and textbooks (e.g., Agnesi)."
+            ],
+            "references": [
+              1
+            ]
+          },
+          {
+            "id": "t2.4",
+            "title": "Foundational controversies and formalization",
+            "summary_points": [
+              "Early infinitesimal methods were criticized for lack of rigor (e.g., Berkeley's 'ghosts of departed quantities'); later formalization replaced heuristic infinitesimals with ε-δ limit definitions and set-theoretic constructions.",
+              "Codifying limits, convergence, and rigorous proofs produced the foundation of modern analysis; alternative rigorous frameworks (e.g., nonstandard analysis) later rehabilitated infinitesimals under formal axioms."
+            ],
+            "references": [
+              1
+            ]
+          }
+        ],
+        "references": [
+          1
+        ]
+      },
+      {
+        "id": "t3",
+        "title": "Foundations, methods and series",
+        "summary_points": [
+          "Foundations of calculus rest on the precise notion of a limit and on tests for convergence of sequences and series; these underlie definitions of continuity, derivative, and integral.",
+          "Power series (Taylor/Maclaurin) and analytic-function theory enable representation and approximation of functions; convergence criteria determine where such expansions are valid.",
+          "Computational and proof techniques include limit evaluation, series manipulation, differentiation/integration rules, and transform methods for applied problems."
+        ],
+        "subtopics": [
+          {
+            "id": "t3.1",
+            "title": "Taylor and Maclaurin series",
+            "summary_points": [
+              "Express many well-behaved functions as infinite polynomials centered at a point; coefficients are given by higher derivatives at that point divided by factorials.",
+              "Used for local approximation, error estimation (remainder terms), and analytic continuation when convergence regions are known."
+            ],
+            "references": [
+              1
+            ]
+          }
+        ],
+        "references": [
+          1
+        ]
+      },
+      {
+        "id": "t4",
+        "title": "Applications and impact",
+        "summary_points": [
+          "Calculus is the mathematical backbone for problems involving change with respect to a variable (time, space, other parameters) and is central to physics, engineering, economics, biology and other sciences.",
+          "Classical mechanics, electromagnetism, fluid dynamics, optimization, probability (continuous distributions), and differential equations all depend heavily on calculus concepts and methods.",
+          "Techniques such as series approximations, differential equation solving, and integral transforms (not detailed in source but implied by calculus applications) are routinely used in modelling and computation."
+        ],
+        "subtopics": [],
+        "references": [
+          1
+        ]
+      },
+      {
+        "id": "t5",
+        "title": "Other 'calculi': Lambda calculus and Join-calculus (formal systems)",
+        "summary_points": [
+          "The term 'calculus' extends beyond classical analysis to denote formal systems for computation or reasoning; two prominent examples are lambda calculus (logic/computation) and join-calculus (process calculus for distributed systems).",
+          "These calculi are not about continuous change but are formal languages with well-defined syntax and reduction/operational rules used in theoretical computer science and language design."
+        ],
+        "subtopics": [
+          {
+            "id": "t5.1",
+            "title": "Lambda calculus (functional computation)",
+            "summary_points": [
+              "A formal system introduced by Alonzo Church to express computation via function abstraction and application, using variable binding and substitution.",
+              "Terms are variables, lambda abstractions (λx.M) and applications (M N); two central reduction operations are α-conversion (renaming bound variables) and β-reduction (substituting an argument into an abstraction).",
+              "Untyped lambda calculus is Turing-complete (can simulate any Turing machine); typed variants restrict expressiveness but provide stronger theorems (e.g., termination in simply typed systems).",
+              "Currying converts multi-argument functions into chains of single-argument functions; lambda calculus underlies functional programming languages and has influenced theory in category theory and linguistics.",
+              "Historical notes: introduced in the 1930s; early logical inconsistencies led to refined systems (simply typed lambda calculus) and the lambda notation has debated origins but became standard."
+            ],
+            "references": [
+              2
+            ]
+          },
+          {
+            "id": "t5.2",
+            "title": "Join-calculus (process calculus for distributed programming)",
+            "summary_points": [
+              "Developed at INRIA as a process calculus tailored to distributed programming; designed to avoid constructs (like rendezvous) that are hard to implement in distributed settings while retaining expressiveness.",
+              "Can be seen as an asynchronous π-calculus with syntactic merges of scope restriction, reception, and replicated reception into a single 'definition' construct; enforces one replicated reception per defined name and limits communication to defined names.",
+              "Supports multi-way join patterns (matching messages from multiple channels simultaneously), and is as expressive as the full π-calculus (mutual encodings exist).",
+              "Has influenced or led to practical language implementations and extensions: JoCaml, polyphonic/parallel C#, Join Java, JErlang, and numerous libraries/DSLs embedding join-like constructs in mainstream languages."
+            ],
+            "references": [
+              3
+            ]
+          }
+        ],
+        "references": [
+          2,
+          3,
+          1
+        ]
+      }
+    ],
+    "abstract": "This knowledge base synthesizes core material on 'Calculus' from multiple encyclopedia entries, covering classical mathematical analysis and distinct formal systems that also use the term 'calculus'. Classical calculus is presented through its two primary branches—differential and integral calculus—grounded in limits, convergence, and the fundamental theorem linking differentiation and integration. Historical development traces ancient methods (Egyptian, Greek, Chinese), medieval advances (Middle Eastern and Indian contributions), and the modern synthesis by Newton and Leibniz, including subsequent foundational rigorization. Key methods such as derivative rules, integration techniques, and power-series (Taylor/Maclaurin) expansions are summarized with their computational and applied roles. The term 'calculus' as used in computer science is illustrated by lambda calculus—Church's abstraction/application formalism with α- and β-reduction, currying, and Turing completeness—and by join-calculus—a process calculus designed for distributed programming with join patterns and practical language implementations. Sources document both mathematical techniques and the broader semantic use of 'calculus' in formal systems. The assembled summaries emphasize definitions, methods, historical milestones, foundational issues, and applications, providing a concise yet comprehensive map of the primary concepts, methods, and impacts associated with 'Calculus' in both continuous mathematics and formal computation.",
+    "conclusion": "Calculus in the mathematical sense is a tightly integrated theory of change and accumulation built on limits, derivatives, integrals and series; its historical evolution and formalization allowed it to become a foundational tool across sciences and engineering. The word 'calculus' also labels formal computational frameworks (e.g., lambda and join calculi) that, while conceptually distinct from continuous analysis, share the idea of a systematic calculus of operations and reduction rules. Together these perspectives show 'calculus' as both a concrete set of analytical techniques and a broader metaphor for formal systems that manipulate objects according to precise syntactic and semantic rules."
+  },
+  "report_parts": [
+    "## Core concepts of classical calculus\n\nCalculus is the mathematical study of continuous change, organized around two interrelated branches: differential calculus, which treats rates of change and slopes of curves, and integral calculus, which treats accumulation and areas under or between curves [1]. Central to these branches are the concepts of limits and the convergence of infinite sequences and series; well-defined limiting processes provide the foundation for precise definitions of derivatives and integrals [1]. These limiting notions also underlie series expansions and other infinite processes used throughout calculus [1].\n\nDerivatives in classical calculus represent instantaneous rates of change and are obtained through limiting procedures that convert difference quotients into instantaneous slopes; derivative operations obey a suite of computational rules (for example, the product rule and chain rule) and may be iterated to yield higher derivatives that capture curvature and higher-order behavior [1]. Integrals represent accumulated quantities and can be presented as definite integrals, describing net accumulation over an interval (for example, area), or as indefinite integrals, representing families of antiderivatives; practical integration relies on methods that reduce accumulation problems to computable forms [1]. The Fundamental Theorem of Calculus establishes that differentiation and integration are inverse processes, so that antiderivatives and accumulated net change are linked and one may often compute definite integrals via antiderivatives rather than direct limiting sums [1].\n\nPower-series expansions, including Taylor and Maclaurin series, express many functions as infinite polynomials and provide essential tools for approximation and for analyzing convergence properties of functions; series methods thereby play a central role in both theoretical analysis and approximate calculation within classical calculus [1]. Together, these core ideas—limits, differentiation, integration, the fundamental connection between them, and series expansions—form the conceptual and computational backbone of the subject as applied across scientific and engineering contexts [1].\n\n### Differential calculus\n\nDifferential calculus focuses on instantaneous rates of change and the slopes of curves, with the derivative defined rigorously as the limit of difference quotients taken as the increment approaches zero [1]. This formal limiting definition permits precise calculation of instantaneous behavior of functions and undergirds the derivation of standard computational rules for derivatives.\n\nA suite of operational rules—such as the product rule, quotient rule, and chain rule—enables systematic differentiation of composite and combined functions, and repeated application yields higher derivatives used to study curvature and dynamic behavior [1]. Differential calculus also provides methods for locating extrema via critical points, identified where derivatives vanish or fail to exist, and these techniques are extensively employed in applications ranging from motion and force in physics to optimization problems in engineering and marginal analysis in economics [1].\n\n### Integral calculus\n\nIntegral calculus concerns the accumulation of quantities and geometric measures such as area, volume, and work, classically formulated through summation processes in the Riemann style that lead to definite integrals [1]. The interpretation of integrals as limits of sums makes integral calculus the natural framework for quantifying total accumulation from infinitesimal contributions.\n\nTechniques of integration include antidifferentiation, substitution, and integration by parts, along with methods based directly on limits of sums—the historical method of exhaustion and infinitesimal slicing being conceptual antecedents—each serving to transform accumulation problems into forms that can be evaluated [1]. Integral calculus is applied to a range of physical accumulation problems, including computations of mass and charge distributions, probability measures, areas between curves, and volumes of solids of revolution [1].\n\n### Fundamental Theorem of Calculus\n\nThe Fundamental Theorem of Calculus formalizes the deep connection between differentiation and integration by asserting that the derivative of an integral with a variable upper limit recovers the original integrand and, conversely, that the definite integral of a function over an interval can be computed via any antiderivative of that function [1]. This result forms the principal computational bridge in classical calculus, permitting the evaluation of definite integrals through antiderivatives rather than by directly computing limits of sums [1].",
+    "## History and development\n\nCalculus emerged gradually from a long sequence of techniques and ideas developed across several ancient and medieval cultures, including methods for computing areas, volumes, and infinite series, which ultimately culminated in the formal discoveries attributed to Isaac Newton and Gottfried Wilhelm Leibniz in the late seventeenth century [1]. Newton and Leibniz each established systematic approaches to rates of change and accumulation that were later combined and refined into what is now recognized as modern calculus [1]. The differing emphases of the two figures—Newton's focus on fluxions and physical application and Leibniz's development of a flexible symbolic calculus—shaped both the practice and pedagogy of calculus in subsequent generations [1]. The dissemination of their methods was influenced by the well-known priority dispute between their followers, and in the following centuries mathematicians addressed conceptual criticisms of infinitesimal reasoning by developing rigorous foundations based on limits, convergence, and set-theoretic constructions [1].\n\n### Ancient and classical precursors\n\nProcedures for determining areas and volumes appear in ancient Egyptian mathematical texts and represent early integral-like ideas for aggregation and measurement [1]. Greek mathematics advanced these themes with systematic methods such as the method of exhaustion associated with Eudoxus and the application of indivisible-like reasoning by Archimedes to compute areas, centers of gravity, and volumes of curved figures and solids [1]. These Greek approaches provided a geometric and heuristic foundation for later analytic treatments of accumulation and change.\n\nIndependently, Chinese mathematicians contributed exhaustion-like techniques and principles resembling later formulations of Cavalieri's principle for computing volumes, as developed by figures such as Liu Hui and Zu Gengzhi [1]. These parallel developments illustrate that several classical traditions contained proto-calculus ideas for handling infinitesimal partitions and volumetric computations long before the formal analytic synthesis of the seventeenth century [1].\n\n### Medieval contributions (India and Middle East)\n\nMathematicians in the medieval Islamic world extended summation and quadrature techniques, deriving formulae for sums of powers and obtaining integral-like results that enabled volume calculations for solids including paraboloids and related figures [1]. Such results indicate a sustained interest in methods for discrete summation and continuous measurement that anticipated elements of later integral calculus.\n\nIn the Indian mathematical tradition, scholars such as Bhāskara II and members of the Kerala school, including Madhava, developed proto-differential ideas and series expansions for trigonometric and inverse trigonometric functions, including series for sine, cosine, and arctangent that resemble the Maclaurin series later formulated in Europe [1]. These developments constituted a significant strand of premodern mathematical analysis and illustrate how series expansions and approximation methods emerged in multiple regions prior to European synthesis [1].\n\n### Modern synthesis (17th–18th centuries)\n\nA number of early modern European mathematicians—Kepler, Cavalieri, Fermat, Wallis, Barrow, and Gregory among them—produced intermediate advances in methods of indivisibles, indivisible-based quadrature, and analytic techniques that set the stage for the systematic treatments developed near the end of the seventeenth century [1]. Newton and Leibniz independently systematized procedures for differentiation and integration, articulated key operational rules, and presented frameworks that could be applied broadly across geometry and mechanics [1]. Their work represented both consolidation and extension of prior heuristic methods into general calculational tools.\n\nLeibniz's introduction and popularization of symbolic notation, including the differential operator notation (d/dx) and the integral sign (∫), facilitated manipulation and communication of analytic ideas and has persisted into modern practice [1]. Newton emphasized fluxions and rates in formulizing motion and applied these ideas extensively within physics [1]. In the eighteenth century and beyond, these foundations were elaborated in textbooks and instructional works that codified techniques for broader audiences, exemplified by authors such as Maria Gaetana Agnesi [1].\n\n### Foundational controversies and formalization\n\nInfinitesimal methods employed by early practitioners drew criticism for their perceived lack of rigor; prominent critiques highlighted the need for clearer conceptual grounding for quantities treated as infinitely small, with such criticisms epitomized by formulations like Berkeley's characterization of infinitesimals as \"ghosts of departed quantities\" [1]. In response to these conceptual difficulties, mathematicians and analysts developed rigorous foundations that replaced heuristic infinitesimals with ε–δ definitions of limit, together with precise treatments of convergence and rigorous proofs within set-theoretic frameworks [1]. This codification established the basis of modern real analysis and clarified the logical underpinnings of differentiation and integration.\n\nSubsequent work also showed that alternative rigorous formalisms could rehabilitate infinitesimal notions within axiomatic systems, providing a formal justification for infinitesimal reasoning under different foundational approaches [1]. These developments demonstrate how conceptual criticisms prompted both the tightening of classical analysis and the exploration of new foundational frameworks that accommodate infinitesimal concepts in a rigorous manner [1].",
+    "## Foundations, methods and series\n\nThe foundational structure of calculus is built upon the precise notion of a limit together with tests for convergence of sequences and series; these concepts provide the logical basis for the definitions of continuity, the derivative, and the integral. Limits and convergence criteria serve as the rigorous framework through which pointwise and asymptotic behavior of functions and sequences are characterized, and they determine when the standard calculus constructions are well-defined [1].\n\nWithin this foundational framework, power-series methods and the broader theory of analytic functions enable the representation and approximation of many well-behaved functions by infinite polynomials centered at points of interest. Such representations permit local approximation and, where convergence criteria are satisfied, permit extension of function definitions within regions determined by those criteria; the domain of validity of a series expansion is governed by its convergence properties [1].\n\nApplied and theoretical work in calculus relies on a set of computational and proof techniques grounded in these foundations. Typical methods include direct evaluation of limits, manipulation and resummation of series, systematic use of differentiation and integration rules applied to series and functions, and transform methods employed for solving applied problems. These techniques are used both to establish rigorous results about existence and convergence and to produce practical approximations and solutions in applied contexts [1].\n\n### Taylor and Maclaurin series\n\nTaylor and Maclaurin series express many well-behaved functions as infinite polynomials centered at a point, with the coefficients determined by the function's higher derivatives at that point divided by factorials. This coefficient structure links local differentiability properties of a function directly to the terms of its series expansion and provides an explicit algebraic form for approximations about the chosen center [1].\n\nThese series are used for local approximation and for error estimation via remainder terms, and they support analytic continuation when the regions of convergence are known. The remainder terms quantify the approximation error of truncating the infinite polynomial to finitely many terms, and knowledge of the convergence region is essential when using such expansions to extend function definitions or to continue analytic behavior beyond the immediate neighborhood of the expansion point [1].",
+    "## Applications and impact\n\nCalculus serves as the mathematical backbone for problems involving change with respect to a variable—such as time, space, or other parameters—and is therefore central to disciplines including physics, engineering, economics, biology, and other sciences [1]. This centrality arises from calculus's capacity to describe how quantities vary and interact continuously, making it a foundational language for formulation and analysis across these fields [1].\n\nA range of core scientific and engineering domains depend heavily on calculus concepts and methods. Classical mechanics, electromagnetism, and fluid dynamics all rely on differential and integral calculus to express laws of motion, field behavior, and continuum flows; optimization and the theory of probability for continuous distributions similarly require calculus-based reasoning; and the study and solution of differential equations underpin the formal treatment of many dynamic systems [1]. These connections illustrate how calculus provides both the theoretical framework and practical tools needed to model, analyze, and predict system behavior in diverse applications [1].\n\nConsequently, a set of associated techniques is routinely employed in modelling and computation within these domains. Series approximations, methods for solving differential equations, and integral transforms are among the standard tools used to construct tractable models, obtain approximate solutions, and translate problems into more convenient representations for analysis or numerical computation [1]. Together, these methods extend the applicability of calculus to complex real-world problems by enabling approximation, solution, and interpretation of continuously varying phenomena [1].",
+    "## Other 'calculi': Lambda calculus and Join-calculus (formal systems)\n\nThe term \"calculus\" in theoretical computer science extends beyond its classical usage in analysis to denote formal systems devised for computation and reasoning, with lambda calculus and join-calculus serving as two prominent exemplars of this broader usage [2, 3]. These calculi are formal languages defined by precise syntactic forms and reduction or operational rules rather than by notions of continuous change, and they are studied both for their mathematical properties and for their role in programming-language design and theory [2, 3].\n\nBoth lambda calculus and join-calculus exemplify how compact formal systems can capture core computational paradigms: lambda calculus captures functional abstraction and application, while join-calculus captures patterns of concurrent and distributed interaction. Their formal definitions and associated theorems provide foundations for language implementation techniques, correctness reasoning, and connections to other areas of theory such as category theory or models of concurrency [2, 3].\n\n### Lambda calculus (functional computation)\n\nLambda calculus is a formal system introduced by Alonzo Church to express computation through the mechanisms of function abstraction and application, with variable binding and substitution as central operations [2]. Its syntactic terms comprise variables, lambda abstractions of the form λx.M, and applications M N, and its operational behavior is governed by conversion and reduction rules—most notably α-conversion, which renames bound variables to avoid name capture, and β-reduction, which replaces a formal parameter by a supplied argument via substitution [2]. These primitive constructs and reductions provide a minimal but expressive account of functional computation that can be used to model programs and reasoning about them [2].\n\nThe untyped lambda calculus is Turing-complete and therefore capable of simulating any Turing machine, while typed variants introduce restrictions that trade some expressive power for stronger properties; for example, simply typed lambda calculi enforce termination and other desirable metatheoretic results [2]. The calculus also formalizes the technique of currying, which represents multi-argument functions as nested single-argument functions, and has exerted deep influence on the design of functional programming languages as well as on theoretical developments in category theory and formal linguistics [2]. Historically, lambda calculus was developed in the 1930s, and early logical paradoxes discovered in unrestrained systems motivated the refinement into typed systems; the origin of the lambda notation itself has been the subject of historical discussion but it has since become a standard notation in logic and computation [2].\n\n### Join-calculus (process calculus for distributed programming)\n\nJoin-calculus was developed at INRIA as a process calculus specifically tailored to the concerns of distributed programming, with design choices intended to avoid constructs that are difficult to implement efficiently in distributed contexts while retaining expressive power [3]. It can be regarded as an asynchronous variant of the π-calculus in which several syntactic mechanisms—scope restriction, message reception, and replicated reception—are merged into a single definition construct; the calculus enforces patterns such as one replicated reception per defined name and restricts communication to occur only on defined names to simplify implementation and reasoning [3].\n\nA distinctive feature of the join-calculus is its support for multi-way join patterns that match messages from multiple channels simultaneously, which succinctly expresses synchronization patterns common in concurrency and distributed systems [3]. Despite its implementation-oriented restrictions, the join-calculus is as expressive as the full π-calculus, with mutual encodings demonstrating comparable expressive power. The calculus has also inspired practical language implementations and extensions, including JoCaml, polyphonic/parallel C#, Join Java, JErlang, and numerous libraries and domain-specific embeddings that bring join-like constructs into mainstream programming languages [3]."
+  ],
+  "criticism": {
+    "0": "PASS",
+    "1": "PASS",
+    "2": "PASS",
+    "3": "PASS",
+    "4": "PASS"
+  },
+  "is_criticized": true
+}

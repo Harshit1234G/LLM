@@ -6,6 +6,8 @@ from utils import get_logger
 
 class CriticAgent(BaseAgent):
     def __init__(self):
+        """Reviews the Writer's output against the knowledge base. Detects hallucinations, unsupported claims, or factual drift. Provides corrective feedback or validates correctness.
+        """
         self.logger = get_logger(self.__class__.__name__)
 
         prompt = ChatPromptTemplate(
@@ -52,6 +54,17 @@ class CriticAgent(BaseAgent):
 
 
     def run(self, state):
+        """Reviews the Writer's output against the knowledge base. Detects hallucinations, unsupported claims, or factual drift. Provides corrective feedback or validates correctness.
+
+        Args:
+            state (ResearchState): Current state of the graph.
+
+        Raises:
+            ValueError: If no value for `report_parts` is provided.
+
+        Returns:
+            ResearchState: Updated state with `criticism` and `is_criticized`
+        """
         self.logger.info('CriticAgent started.')
         report_parts = state.get('report_parts', None)
 
@@ -61,6 +74,7 @@ class CriticAgent(BaseAgent):
         
         criticism = {}
 
+        # criticizing each part one-by-one
         for index, part in enumerate(report_parts):
             self.logger.info(f'Criticizing part: {index + 1}')
 
@@ -72,6 +86,7 @@ class CriticAgent(BaseAgent):
                 response = self.llm.invoke(prompt).content.strip()
                 criticism[index] = response
 
+                # status printing in log
                 self.logger.info(f'Successfully criticized part {index + 1}, Status: {response if response == 'PASS' else 'FAIL'}')
 
             except Exception as e:

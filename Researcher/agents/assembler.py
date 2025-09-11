@@ -8,13 +8,18 @@ from utils import get_logger
 
 class AssemblerAgent:
     def __init__(self, **convertor_kwargs):
+        """Integrates all validated sections into a unified document. Produces the final **PDF report** with a Title page, abstract, table of contents, Main body, conclusion, references, appendix, and consistent styling.
+        """
         self.logger = get_logger(self.__class__.__name__)
         self.pdf = MarkdownPdf(**convertor_kwargs)
         self.css = 'body {text-align: justify}'
 
         self.logger.info('AssemblerAgent Initialised.')
 
-
+    # --------------------------------------------------------
+    # most of functions are self-explanatory, so no docstrings
+    # --------------------------------------------------------
+    
     def set_meta_data(self, state: ResearchState) -> None:
         self.pdf.meta['creationDate'] = datetime.now().strftime('%Y-%m-%d')
         self.pdf.meta['producer'] = 'AI Research Assistant'
@@ -74,6 +79,7 @@ class AssemblerAgent:
 
     @staticmethod
     def _format_authors(authors: list[str]) -> str:
+        """Converts the `authors` list into a structured string, resembling IEEE/Vancouver standards."""
         if not authors:
             return ''
 
@@ -84,10 +90,12 @@ class AssemblerAgent:
             if len(parts) == 1:
                 formatted.append(parts[0])
 
+            # author is "Wikipedia Contributers" so conversion doesn't make sense
             elif 'wikipedia' in name.lower():
                 formatted.append(name)
 
             else:
+                # "Harshit Kumawat" -> "H. Kumawat"
                 initials = ' '.join([p[0] + '.' for p in parts[:-1]])
                 formatted.append(f'{initials} {parts[-1]}')
 
@@ -98,6 +106,7 @@ class AssemblerAgent:
             return f'{formatted[0]} and {formatted[1]}'
         
         else:
+            # e.g. -> C. H. Song, H. J. Han, and Y. Avrithis,
             return ', '.join(formatted[:-1]) + f', and {formatted[-1]}'
         
 
@@ -107,6 +116,8 @@ class AssemblerAgent:
 
         for source in sources:
             authors = self._format_authors(source['authors'])
+
+            # reference template: [id] Author(s), [title], [source], [Online]. Available: [url]
             reference = (
                 f"[{source['id']}] "
                 f"{authors}, "
@@ -122,22 +133,27 @@ class AssemblerAgent:
 
 
     def add_appendix_a(self, topics: dict) -> None:
+        """Adds the knowledge base that was extracted earlier."""
+
         appendix = []
         self.logger.info('Creating Appendix A: Key points of Report...')
 
         for index, topic in enumerate(topics, start= 1):
+            # adding every summary point of topic as valid markdown bullet points
             heading = f'{index}. **{topic['title']}:**\n\t- '
             summary = '\n\t- '.join(b for b in topic['summary_points'])
             self.logger.info(f'Extracted main summary of topic {topic['title']}.')
 
             subtopics = []
             for index, subtopic in enumerate(topic.get('subtopics', []), start= 1):
+                # adding every subtopic's summary points into the topic's summary points
                 bullets = '\n\t- '.join(b for b in subtopic['summary_points'])
                 subtopics.append('\n\t- ' + bullets)
                 self.logger.info(f'Extracted summary of subtopic {index}.')
 
             subtopic_bullets = '\n'.join(subtopics)
 
+            # combining all points (topic + summary points)
             appendix.append(heading + summary + subtopic_bullets)
             self.logger.info(f'Combined heading, summary and subtopic summary.')
 
@@ -146,8 +162,14 @@ class AssemblerAgent:
         
 
     def add_appendix_b(self, news_list: list[dict]) -> None:
+        """Adds the Recent News."""
         appendix = []
         self.logger.info('Creating Appendix B: Recent News...')
+
+        # News template: 
+        # Title
+        #   - Publisher - Published on [date]
+        #   - For more details click here.
 
         for news in news_list:
             title = f'- **{news['title']}**'
@@ -170,6 +192,37 @@ class AssemblerAgent:
 
 
     def create_final_pdf(self, state: ResearchState) -> None:
+        """
+        Generates the final structured research report as a PDF.
+
+        This method assembles all components of the research pipeline (produced by Searcher, Extractor, Writer, and Critic agents) into a professionally formatted PDF document. It sequentially builds the report with title page, abstract, methodology, main body, conclusion, references, and appendices.
+
+        Args:
+            state (ResearchState): The complete research state containing:
+                - topic (str): Research topic for the title page and filename.
+                - knowledge (dict): Extracted knowledge with fields:
+                    * abstract (str): Abstract text for the report.
+                    * conclusion (str): Conclusion text.
+                    * sources (list[dict]): List of references in structured format.
+                    * topics (list[dict]): Topics and subtopics for Appendix A.
+                - report_parts (list[str]): Expanded content sections for the main body.
+                - news (list[dict]): Recent news items about the topic for Appendix B.
+
+        ## Workflow:
+            1. Set document metadata (title, author, date, etc.).
+            2. Add the title page.
+            3. Insert abstract.
+            4. Insert methodology section.
+            5. Compile the main body using generated report parts.
+            6. Add conclusion.
+            7. Format and append references in citation style.
+            8. Add Appendix A (structured knowledge summary).
+            9. Add Appendix B (recent news with metadata).
+            10. Save the completed PDF.
+
+        ## Output:
+            Saves the final PDF to disk with the filename: "topic.pdf".
+        """
         self.set_meta_data(state)
         self.add_title_page()
         self.add_abstract(state.get('knowledge')['abstract'])
