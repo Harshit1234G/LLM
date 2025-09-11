@@ -87,15 +87,14 @@ class ResearchAssistant:
 
             elapsed = end - start
             minutes, seconds = divmod(elapsed, 60)
-            save_state(state, topic= user_input)
 
             self.logger.info(f'Total time taken: {int(minutes)}m {seconds:.2f}s')
-            self.logger.info(f'Saved final state of the program at .data/{sanitize_filename(user_input)}.json')
-
             return state
         
         except Exception as e:
             self.logger.exception(f'Error while researching topic {user_input}: {e}')
+            return {}
+            
+        finally:
             save_state(self.graph.get_state(), topic= user_input)
             self.logger.info(f'Saved current state of the program at .data/{sanitize_filename(user_input)}.json')
-            exit()
