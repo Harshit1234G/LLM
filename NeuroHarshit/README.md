@@ -32,7 +32,7 @@ An AI-powered personal portfolio assistant built using RAG (Retrieval-Augmented 
 ## ⚙️ Installation
 - Step-by-step instructions:
 ```bash
-git clone https://github.com/Harshit1234G/NeuroHarshit.git
+git clone https://github.com/Harshit1234G/LLM
 cd NeuroHarshit
 pip install -r requirements.txt
 streamlit run main.py
