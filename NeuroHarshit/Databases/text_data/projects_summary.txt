@@ -5,7 +5,7 @@ Projects:
 - Technologies used in Handwritten Digit Recognition: Python, TensorFlow, NumPy, Pandas, Pillow, CustomTkinter, scikit-learn, PyInstaller, Matplotlib, Tkinter, Pickle, and inno setup builder.
 - Main Challenge of Handwritten Digit Recognition: Creating the GUI
 - Real world use case of Handwritten Digit Recognition: Used in banking for cheque processing, postal services for reading handwritten zip codes/addresses, and digitizing forms/documents for automation.
-- Keywords for Handwritten Digit Recognition: Custom Model, Computer Vision, Deep Learning, GUI, Model Deployment
+- Keywords for Handwritten Digit Recognition: Best Project, Custom Model, Computer Vision, Deep Learning, GUI, Model Deployment
 
 2. NeuroHarshit:
 - Duration of NeuroHarshit: Aug 2025 – Aug 2025
@@ -24,6 +24,13 @@ Projects:
 - Real world use case of Human Emotion Detection: Useful in customer service (detecting customer emotions in real time), healthcare (supporting mental health monitoring), Security & Surveillance (Can identify suspicious behavior based on emotional cues).
 - Keywords for Human Emotion Detection: Custom Model, Deep Learning, Real-time Computer Vision Pipeline
 
+4. Agentic AI Research Assistant:
+- Duration of Agentic AI Research Assistant: Aug 2025 – Sep 2025
+- Description of Agentic AI Research Assistant: An advanced multi-agent research system that automates the entire academic-style research workflow. It consists of multiple agents: SearcherAgent (fetches data from Wikipedia, arXiv, and GNews), ExtractorAgent (structures information into a JSON knowledge base), WriterAgent (expands summaries into detailed markdown reports), CriticAgent (validates accuracy and flags hallucinations), and AssemblerAgent (compiles everything into a polished PDF report with title page, abstract, methodology, main body, appendices, and references). The system ensures factual accuracy, reliability, and cost-efficient research generation.
+- Technologies used in Agentic AI Research Assistant: Python, OpenAI API, LangChain, LangGraph, LangSmith, Wikipedia API, arXiv API, GNews API, markdown-pdf.
+- Main Challenge of Agentic AI Research Assistant: Designing strict JSON extraction and building critic loops to minimize hallucinations.
+- Real world use case of Agentic AI Research Assistant: Can serve as a powerful research automation tool for students, researchers, and professionals by generating structured, citation-backed reports on any topic. It demonstrates how AI agents can collaborate to handle complex multi-step workflows reliably.
+- Keywords for Agentic AI Research Assistant: Agentic AI, Research Automation, Multi-Agent System, LLM, Knowledge Extraction, Report Generation
 
 Learning & Practice Repository: 
 1. Hands-on-ML:
