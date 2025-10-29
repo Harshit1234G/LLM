@@ -5,9 +5,11 @@ It includes basic explorations, as well as complete AI projects built using mode
 ## 📁 Repository Structure
 1. **Basics**: A collection of introductory implementations and experiments with Hugging Face, Sentence Transformers, Ollama, LangChain, LangGraph, prompt engineering, and a simple RAG system.
 
-2. **NeuroHarshit**: An AI-powered personal portfolio assistant built using RAG. Designed to answer questions about my background, projects, skills, and experience.
+2. **MCP Servers**: Basics about MCP servers.
 
-3. **Researcher**: An Agentic AI Research Assistant. Uses multiple coordinated agents for information retrieval, validation, and report generation in academic style.
+3. **NeuroHarshit**: An AI-powered personal portfolio assistant built using RAG. Designed to answer questions about my background, projects, skills, and experience.
+
+4. **Researcher**: An Agentic AI Research Assistant. Uses multiple coordinated agents for information retrieval, validation, and report generation in academic style.
 
 ## ✍️ Contents
 - Foundational LLM concepts and experiments.
